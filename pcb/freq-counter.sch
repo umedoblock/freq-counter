@@ -2118,8 +2118,8 @@ Connection ~ 7250 1900
 $Sheet
 S 2900 1950 650  800 
 U 5A109188
-F0 "Digits6" 60
-F1 "Digits6.sch" 60
+F0 "3in8out" 60
+F1 "3in8out.sch" 60
 F2 "Bit0" I L 2900 2000 60 
 F3 "Bit1" I L 2900 2100 60 
 F4 "Bit2" I L 2900 2200 60 
