@@ -37,7 +37,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 2
+Sheet 1 3
 Title ""
 Date "2017-11-17"
 Rev ""
@@ -315,500 +315,14 @@ F 3 "" H -1400 6850 50  0001 C CNN
 $EndComp
 Text Notes -1550 7700 0    60   ~ 0
 debounce\nClock pin held low\npulse high
-$Comp
-L 7seg-2digit-ca U7
-U 1 1 5A06F715
-P 6900 5000
-F 0 "U7" H 6450 5350 60  0000 C CNN
-F 1 "7seg-2digit-ca" H 6900 4950 60  0000 C CNN
-F 2 "" H 7150 5100 60  0001 C CNN
-F 3 "" H 7150 5100 60  0001 C CNN
-	1    6900 5000
-	1    0    0    -1  
-$EndComp
-Entry Wire Line
-	7100 4250 7200 4350
-Entry Wire Line
-	7000 4250 7100 4350
-Entry Wire Line
-	6900 4250 7000 4350
-Entry Wire Line
-	6800 4250 6900 4350
-Entry Wire Line
-	6700 4250 6800 4350
-Entry Wire Line
-	6600 4250 6700 4350
-Entry Wire Line
-	6500 4250 6600 4350
-Entry Wire Line
-	6400 4250 6500 4350
-Entry Wire Line
-	7200 4250 7300 4350
-Entry Wire Line
-	7100 5800 7200 5700
-Entry Wire Line
-	7000 5800 7100 5700
-Entry Wire Line
-	6900 5800 7000 5700
-Entry Wire Line
-	6800 5800 6900 5700
-Entry Wire Line
-	6600 5800 6700 5700
-Entry Wire Line
-	6500 5800 6600 5700
-Entry Wire Line
-	6400 5800 6500 5700
-Text Label 6500 5700 1    60   ~ 0
-KE
-Text Label 6600 5700 1    60   ~ 0
-KD
-Text Label 6700 5700 1    60   ~ 0
-KC
-Text Label 6900 5700 1    60   ~ 0
-KE
-Text Label 7000 5700 1    60   ~ 0
-KD
-Text Label 7100 5700 1    60   ~ 0
-KG
-Text Label 7200 5700 1    60   ~ 0
-KC
-Text Label 6500 4350 3    60   ~ 0
-KF
-Text Label 6600 4350 3    60   ~ 0
-KG
-Text Label 6700 4350 3    60   ~ 0
-KA
-Text Label 6800 4350 3    60   ~ 0
-KB
-Text Label 6900 4350 3    60   ~ 0
-KD15
-Text Label 7000 4350 3    60   ~ 0
-KD24
-Text Label 7100 4350 3    60   ~ 0
-KF
-Text Label 7200 4350 3    60   ~ 0
-KA
-Text Label 7300 4350 3    60   ~ 0
-KB
-Entry Bus Bus
-	6100 4350 6200 4250
-Entry Bus Bus
-	6100 5900 6200 5800
-$Comp
-L R R17
-U 1 1 5A076067
-P 5750 4350
-F 0 "R17" V 5800 4200 50  0000 C CNN
-F 1 "33" V 5750 4350 50  0000 C CNN
-F 2 "" V 5680 4350 50  0001 C CNN
-F 3 "" H 5750 4350 50  0001 C CNN
-	1    5750 4350
-	0    1    -1   0   
-$EndComp
-$Comp
-L R R18
-U 1 1 5A075FCA
-P 5750 4450
-F 0 "R18" V 5800 4300 50  0000 C CNN
-F 1 "33" V 5750 4450 50  0000 C CNN
-F 2 "" V 5680 4450 50  0001 C CNN
-F 3 "" H 5750 4450 50  0001 C CNN
-	1    5750 4450
-	0    1    -1   0   
-$EndComp
-$Comp
-L R R19
-U 1 1 5A075F30
-P 5750 4550
-F 0 "R19" V 5800 4400 50  0000 C CNN
-F 1 "33" V 5750 4550 50  0000 C CNN
-F 2 "" V 5680 4550 50  0001 C CNN
-F 3 "" H 5750 4550 50  0001 C CNN
-	1    5750 4550
-	0    1    -1   0   
-$EndComp
-$Comp
-L R R20
-U 1 1 5A075E99
-P 5750 4650
-F 0 "R20" V 5800 4500 50  0000 C CNN
-F 1 "33" V 5750 4650 50  0000 C CNN
-F 2 "" V 5680 4650 50  0001 C CNN
-F 3 "" H 5750 4650 50  0001 C CNN
-	1    5750 4650
-	0    1    -1   0   
-$EndComp
-$Comp
-L R R21
-U 1 1 5A075E05
-P 5750 4750
-F 0 "R21" V 5800 4600 50  0000 C CNN
-F 1 "33" V 5750 4750 50  0000 C CNN
-F 2 "" V 5680 4750 50  0001 C CNN
-F 3 "" H 5750 4750 50  0001 C CNN
-	1    5750 4750
-	0    1    -1   0   
-$EndComp
-$Comp
-L R R22
-U 1 1 5A075D74
-P 5750 4850
-F 0 "R22" V 5800 4700 50  0000 C CNN
-F 1 "33" V 5750 4850 50  0000 C CNN
-F 2 "" V 5680 4850 50  0001 C CNN
-F 3 "" H 5750 4850 50  0001 C CNN
-	1    5750 4850
-	0    1    -1   0   
-$EndComp
-$Comp
-L R R23
-U 1 1 5A074452
-P 5750 4950
-F 0 "R23" V 5800 4800 50  0000 C CNN
-F 1 "33" V 5750 4950 50  0000 C CNN
-F 2 "" V 5680 4950 50  0001 C CNN
-F 3 "" H 5750 4950 50  0001 C CNN
-	1    5750 4950
-	0    1    -1   0   
-$EndComp
-Text Label 6000 4850 2    60   ~ 0
-KB
-Entry Wire Line
-	6100 4950 6000 4850
-Text Label 6000 4450 2    60   ~ 0
-KF
-Text Label 6000 4950 2    60   ~ 0
-KA
-Text Label 6000 4350 2    60   ~ 0
-KG
-Text Label 6000 4250 2    60   ~ 0
-KDP
-Text Label 6000 4750 2    60   ~ 0
-KC
-Text Label 6000 4650 2    60   ~ 0
-KD
-Text Label 6000 4550 2    60   ~ 0
-KE
-Entry Wire Line
-	6100 4550 6000 4450
-Entry Wire Line
-	6100 4650 6000 4550
-Entry Wire Line
-	6100 4750 6000 4650
-Entry Wire Line
-	6100 4850 6000 4750
-Entry Wire Line
-	6100 4350 6000 4250
-Entry Wire Line
-	6100 4450 6000 4350
-Entry Wire Line
-	6100 5050 6000 4950
-$Comp
-L 7seg-2digit-ca U9
-U 1 1 5A077758
-P 8300 5000
-F 0 "U9" H 7850 5350 60  0000 C CNN
-F 1 "7seg-2digit-ca" H 8300 4950 60  0000 C CNN
-F 2 "" H 8550 5100 60  0001 C CNN
-F 3 "" H 8550 5100 60  0001 C CNN
-	1    8300 5000
-	1    0    0    -1  
-$EndComp
-Entry Wire Line
-	8500 4250 8600 4350
-Entry Wire Line
-	8400 4250 8500 4350
-Entry Wire Line
-	8300 4250 8400 4350
-Entry Wire Line
-	8200 4250 8300 4350
-Entry Wire Line
-	8100 4250 8200 4350
-Entry Wire Line
-	8000 4250 8100 4350
-Entry Wire Line
-	7900 4250 8000 4350
-Entry Wire Line
-	7800 4250 7900 4350
-Entry Wire Line
-	8600 4250 8700 4350
-Entry Wire Line
-	8500 5800 8600 5700
-Entry Wire Line
-	8400 5800 8500 5700
-Entry Wire Line
-	8300 5800 8400 5700
-Entry Wire Line
-	8200 5800 8300 5700
-Entry Wire Line
-	8000 5800 8100 5700
-Entry Wire Line
-	7900 5800 8000 5700
-Entry Wire Line
-	7800 5800 7900 5700
-Text Label 7900 5700 1    60   ~ 0
-KE
-Text Label 8000 5700 1    60   ~ 0
-KD
-Text Label 8100 5700 1    60   ~ 0
-KC
-Text Label 8300 5700 1    60   ~ 0
-KE
-Text Label 8400 5700 1    60   ~ 0
-KD
-Text Label 8500 5700 1    60   ~ 0
-KG
-Text Label 8600 5700 1    60   ~ 0
-KC
-Text Label 7900 4350 3    60   ~ 0
-KF
-Text Label 8000 4350 3    60   ~ 0
-KG
-Text Label 8100 4350 3    60   ~ 0
-KA
-Text Label 8200 4350 3    60   ~ 0
-KB
-Text Label 8300 4350 3    60   ~ 0
-KD13
-Text Label 8400 4350 3    60   ~ 0
-KD22
-Text Label 8500 4350 3    60   ~ 0
-KF
-Text Label 8600 4350 3    60   ~ 0
-KA
-Text Label 8700 4350 3    60   ~ 0
-KB
-Entry Bus Bus
-	7500 4350 7600 4250
-Entry Bus Bus
-	7500 5900 7600 5800
-$Comp
-L 7seg-2digit-ca U10
-U 1 1 5A077EDE
-P 9700 5000
-F 0 "U10" H 9250 5350 60  0000 C CNN
-F 1 "7seg-2digit-ca" H 9700 4950 60  0000 C CNN
-F 2 "" H 9950 5100 60  0001 C CNN
-F 3 "" H 9950 5100 60  0001 C CNN
-	1    9700 5000
-	1    0    0    -1  
-$EndComp
-Entry Wire Line
-	9900 4250 10000 4350
-Entry Wire Line
-	9800 4250 9900 4350
-Entry Wire Line
-	9700 4250 9800 4350
-Entry Wire Line
-	9600 4250 9700 4350
-Entry Wire Line
-	9500 4250 9600 4350
-Entry Wire Line
-	9400 4250 9500 4350
-Entry Wire Line
-	9300 4250 9400 4350
-Entry Wire Line
-	9200 4250 9300 4350
-Entry Wire Line
-	10000 4250 10100 4350
-Entry Wire Line
-	9900 5800 10000 5700
-Entry Wire Line
-	9800 5800 9900 5700
-Entry Wire Line
-	9700 5800 9800 5700
-Entry Wire Line
-	9600 5800 9700 5700
-Entry Wire Line
-	9400 5800 9500 5700
-Entry Wire Line
-	9300 5800 9400 5700
-Entry Wire Line
-	9200 5800 9300 5700
-Text Label 9300 5700 1    60   ~ 0
-KE
-Text Label 9400 5700 1    60   ~ 0
-KD
-Text Label 9500 5700 1    60   ~ 0
-KC
-Text Label 9700 5700 1    60   ~ 0
-KE
-Text Label 9800 5700 1    60   ~ 0
-KD
-Text Label 9900 5700 1    60   ~ 0
-KG
-Text Label 10000 5700 1    60   ~ 0
-KC
-Text Label 9300 4350 3    60   ~ 0
-KF
-Text Label 9400 4350 3    60   ~ 0
-KG
-Text Label 9500 4350 3    60   ~ 0
-KA
-Text Label 9600 4350 3    60   ~ 0
-KB
-Text Label 9700 4350 3    60   ~ 0
-KD11
-Text Label 9800 4350 3    60   ~ 0
-KD20
-Text Label 9900 4350 3    60   ~ 0
-KF
-Text Label 10000 4350 3    60   ~ 0
-KA
-Text Label 10100 4350 3    60   ~ 0
-KB
-Entry Bus Bus
-	8900 4350 9000 4250
-Entry Bus Bus
-	8900 5900 9000 5800
-Text Label 5900 5400 2    60   ~ 0
-KD11
-Entry Wire Line
-	6100 5500 6000 5400
-Text Label 5900 5300 2    60   ~ 0
-KD20
-Entry Wire Line
-	6100 5400 6000 5300
 Text Notes 10700 800  0    60   ~ 0
 Hz/RPM LEDs
-Text Notes 5600 3950 0    60   ~ 0
-per R get\n3.2V.
-NoConn ~ 6800 5500
-NoConn ~ 7300 5500
-NoConn ~ 10100 5500
-NoConn ~ 9600 5500
-NoConn ~ 8700 5500
-$Comp
-L LED D10
-U 1 1 5A07D7A8
-P 10750 5150
-F 0 "D10" H 10750 5250 50  0000 C CNN
-F 1 "3" V 10900 5100 50  0000 C CNN
-F 2 "" H 10750 5150 50  0001 C CNN
-F 3 "" H 10750 5150 50  0001 C CNN
-	1    10750 5150
-	0    -1   -1   0   
-$EndComp
-$Comp
-L LED D12
-U 1 1 5A07D970
-P 10950 5150
-F 0 "D12" H 10950 5250 50  0000 C CNN
-F 1 "2" V 11100 5100 50  0000 C CNN
-F 2 "" H 10950 5150 50  0001 C CNN
-F 3 "" H 10950 5150 50  0001 C CNN
-	1    10950 5150
-	0    -1   -1   0   
-$EndComp
-$Comp
-L LED D9
-U 1 1 5A07DB23
-P 10550 5150
-F 0 "D9" H 10550 5250 50  0000 C CNN
-F 1 "4" V 10700 5100 50  0000 C CNN
-F 2 "" H 10550 5150 50  0001 C CNN
-F 3 "" H 10550 5150 50  0001 C CNN
-	1    10550 5150
-	0    -1   -1   0   
-$EndComp
-$Comp
-L LED D13
-U 1 1 5A07DE2B
-P 11150 5150
-F 0 "D13" H 11150 5250 50  0000 C CNN
-F 1 "1" V 11300 5100 50  0000 C CNN
-F 2 "" H 11150 5150 50  0001 C CNN
-F 3 "" H 11150 5150 50  0001 C CNN
-	1    11150 5150
-	0    -1   -1   0   
-$EndComp
-Text Label 10550 5300 3    60   ~ 0
-KDP
-Text Label 10750 5300 3    60   ~ 0
-KDP
-Text Label 10950 5300 3    60   ~ 0
-KDP
-Text Label 11150 5300 3    60   ~ 0
-KDP
-$Comp
-L R R34
-U 1 1 5A080536
-P 7900 6050
-F 0 "R34" V 7980 6050 50  0000 C CNN
-F 1 "180" V 7900 6050 50  0000 C CNN
-F 2 "" V 7830 6050 50  0001 C CNN
-F 3 "" H 7900 6050 50  0001 C CNN
-	1    7900 6050
-	0    1    -1   0   
-$EndComp
-Text Label 6800 5700 1    60   ~ 0
-KDP
-Entry Wire Line
-	6700 5800 6800 5700
-Text Label 7300 5700 1    60   ~ 0
-KDP
-Entry Wire Line
-	7200 5800 7300 5700
-Text Label 8700 5700 1    60   ~ 0
-KDP
-Entry Wire Line
-	8600 5800 8700 5700
-Text Label 9600 5700 1    60   ~ 0
-KDP
-Entry Wire Line
-	9500 5800 9600 5700
-Text Label 10100 5700 1    60   ~ 0
-KDP
-Entry Wire Line
-	10000 5800 10100 5700
-NoConn ~ 5900 4250
-Text Label 11150 5000 1    60   ~ 0
-KD20
-Text Label 10950 5000 1    60   ~ 0
-KD11
-Text Label 10750 5000 1    60   ~ 0
-KD22
-Text Label 10550 5000 1    60   ~ 0
-KD13
-$Comp
-L GND #PWR4
-U 1 1 5A0709AD
-P 7650 6050
-F 0 "#PWR4" H 7650 5800 50  0001 C CNN
-F 1 "GND" H 7650 5900 50  0000 C CNN
-F 2 "" H 7650 6050 50  0001 C CNN
-F 3 "" H 7650 6050 50  0001 C CNN
-	1    7650 6050
-	0    1    -1   0   
-$EndComp
-Text Notes 10450 4500 0    60   ~ 0
-div number of Hz/RPM.
 Text Notes 8150 650  2    60   ~ 0
 1kMG LEDs
 Text Label 13300 1000 0    60   ~ 0
 Hz/RPM
 Text Label 2500 2600 0    60   ~ 0
 Hz/RPM
-Text Label 5900 5600 2    60   ~ 0
-KD13
-Entry Wire Line
-	6100 5700 6000 5600
-Text Label 5900 5500 2    60   ~ 0
-KD22
-Entry Wire Line
-	6100 5600 6000 5500
-Text Label 5900 5800 2    60   ~ 0
-KD15
-Entry Wire Line
-	6100 5900 6000 5800
-Text Label 5900 5700 2    60   ~ 0
-KD24
-Entry Wire Line
-	6100 5800 6000 5700
-NoConn ~ 7300 5700
-NoConn ~ 6800 5700
-NoConn ~ 8700 5700
-NoConn ~ 10100 5700
 $Comp
 L ATTINY4313-PU(freq-counter) U1
 U 1 1 5A09763E
@@ -820,39 +334,6 @@ F 3 "" H 1050 1650 50  0001 C CNN
 	1    1500 1600
 	1    0    0    -1  
 $EndComp
-Text Label 2500 1100 0    60   ~ 0
-PB7
-Text Label 2500 1200 0    60   ~ 0
-PB6
-Text Label 2500 1300 0    60   ~ 0
-PB5
-Text Label 2500 1400 0    60   ~ 0
-PB4
-Text Label 2500 1500 0    60   ~ 0
-PB3
-Text Label 2500 1600 0    60   ~ 0
-PB2
-Text Label 2500 1700 0    60   ~ 0
-PB1
-Text Label 2500 1800 0    60   ~ 0
-PB0
-Text Label 5500 4250 2    60   ~ 0
-PB7
-Text Label 5500 4350 2    60   ~ 0
-PB6
-Text Label 5500 4450 2    60   ~ 0
-PB5
-Text Label 5500 4550 2    60   ~ 0
-PB4
-Text Label 5500 4650 2    60   ~ 0
-PB3
-Text Label 5500 4750 2    60   ~ 0
-PB2
-Text Label 5500 4850 2    60   ~ 0
-PB1
-Text Label 5500 4950 2    60   ~ 0
-PB0
-NoConn ~ 5500 4250
 Text Label -700 6950 0    60   ~ 0
 PA2
 NoConn ~ -250 7300
@@ -1208,15 +689,6 @@ Text Label 9750 700  0    60   ~ 0
 1kMG-L
 Text Label 9750 2650 0    60   ~ 0
 1kMG-H
-Text Notes 5500 4150 0    60   ~ 0
-input L.
-Text Notes 5500 5200 0    60   ~ 0
-input H.
-NoConn ~ 9600 5700
-Text Notes 10700 5600 0    60   ~ 0
-input L.
-Text Notes 10650 4750 0    60   ~ 0
-input H.
 $Comp
 L LED D8
 U 1 1 5A0F274F
@@ -1421,8 +893,6 @@ F 3 "" H 8300 2000 60  0001 C CNN
 	1    8050 1900
 	1    0    0    -1  
 $EndComp
-Text Notes 5500 6000 0    60   ~ 0
-right side\nDigits
 Text Label 8750 500  0    60   ~ 0
 TVCC
 Text Label 6650 1400 2    60   ~ 0
@@ -1774,14 +1244,6 @@ Wire Wire Line
 	2400 1200 2500 1200
 Wire Wire Line
 	2400 1100 2500 1100
-Wire Wire Line
-	5900 5700 6000 5700
-Wire Wire Line
-	5900 5800 6000 5800
-Wire Wire Line
-	5900 5500 6000 5500
-Wire Wire Line
-	5900 5600 6000 5600
 Wire Notes Line
 	9850 550  9850 3400
 Wire Notes Line
@@ -1790,176 +1252,6 @@ Wire Notes Line
 	6400 3400 6400 550 
 Wire Notes Line
 	9850 3400 6400 3400
-Wire Notes Line
-	10350 3900 10350 6200
-Wire Wire Line
-	8150 6050 8050 6050
-Wire Notes Line
-	5300 6300 5300 3750
-Wire Notes Line
-	11550 6300 5300 6300
-Wire Notes Line
-	11550 3750 11550 6300
-Wire Notes Line
-	5300 3750 11550 3750
-Wire Wire Line
-	7650 6050 7750 6050
-Wire Wire Line
-	8150 5700 8150 6050
-Wire Wire Line
-	8200 5700 8150 5700
-Wire Wire Line
-	8200 5500 8200 5700
-Wire Wire Line
-	5900 4250 6000 4250
-Wire Wire Line
-	5900 5300 6000 5300
-Wire Wire Line
-	5900 5400 6000 5400
-Wire Bus Line
-	8900 5900 8900 4350
-Wire Bus Line
-	9000 5800 10000 5800
-Wire Bus Line
-	9000 4250 10000 4250
-Wire Wire Line
-	9300 5700 9300 5500
-Wire Wire Line
-	9400 5700 9400 5500
-Wire Wire Line
-	9500 5700 9500 5500
-Wire Wire Line
-	9700 5700 9700 5500
-Wire Wire Line
-	9800 5700 9800 5500
-Wire Wire Line
-	9900 5700 9900 5500
-Wire Wire Line
-	10000 5700 10000 5500
-Wire Wire Line
-	9300 4350 9300 4500
-Wire Wire Line
-	9400 4350 9400 4500
-Wire Wire Line
-	9500 4350 9500 4500
-Wire Wire Line
-	9600 4350 9600 4500
-Wire Wire Line
-	9700 4350 9700 4500
-Wire Wire Line
-	9800 4350 9800 4500
-Wire Wire Line
-	9900 4350 9900 4500
-Wire Wire Line
-	10000 4350 10000 4500
-Wire Wire Line
-	10100 4350 10100 4500
-Wire Bus Line
-	6100 5900 8900 5900
-Wire Bus Line
-	7500 4350 7500 5900
-Wire Bus Line
-	7600 5800 8600 5800
-Wire Bus Line
-	7600 4250 8600 4250
-Wire Wire Line
-	7900 5700 7900 5500
-Wire Wire Line
-	8000 5700 8000 5500
-Wire Wire Line
-	8100 5700 8100 5500
-Wire Wire Line
-	8300 5700 8300 5500
-Wire Wire Line
-	8400 5700 8400 5500
-Wire Wire Line
-	8500 5700 8500 5500
-Wire Wire Line
-	8600 5700 8600 5500
-Wire Wire Line
-	7900 4350 7900 4500
-Wire Wire Line
-	8000 4350 8000 4500
-Wire Wire Line
-	8100 4350 8100 4500
-Wire Wire Line
-	8200 4350 8200 4500
-Wire Wire Line
-	8300 4350 8300 4500
-Wire Wire Line
-	8400 4350 8400 4500
-Wire Wire Line
-	8500 4350 8500 4500
-Wire Wire Line
-	8600 4350 8600 4500
-Wire Wire Line
-	8700 4350 8700 4500
-Wire Wire Line
-	6000 4450 5900 4450
-Wire Wire Line
-	6000 4950 5900 4950
-Wire Wire Line
-	6000 4350 5900 4350
-Wire Wire Line
-	6000 4750 5900 4750
-Wire Wire Line
-	6000 4650 5900 4650
-Wire Wire Line
-	6000 4550 5900 4550
-Wire Wire Line
-	6000 4850 5900 4850
-Wire Wire Line
-	5600 4950 5500 4950
-Wire Wire Line
-	5500 4850 5600 4850
-Wire Wire Line
-	5600 4750 5500 4750
-Wire Wire Line
-	5500 4650 5600 4650
-Wire Wire Line
-	5600 4550 5500 4550
-Wire Wire Line
-	5500 4450 5600 4450
-Wire Wire Line
-	5600 4350 5500 4350
-Wire Bus Line
-	6100 4350 6100 5900
-Wire Bus Line
-	6200 5800 7200 5800
-Wire Bus Line
-	6200 4250 7200 4250
-Wire Wire Line
-	6500 5700 6500 5500
-Wire Wire Line
-	6600 5700 6600 5500
-Wire Wire Line
-	6700 5700 6700 5500
-Wire Wire Line
-	6900 5700 6900 5500
-Wire Wire Line
-	7000 5700 7000 5500
-Wire Wire Line
-	7100 5700 7100 5500
-Wire Wire Line
-	7200 5700 7200 5500
-Wire Wire Line
-	6500 4350 6500 4500
-Wire Wire Line
-	6600 4350 6600 4500
-Wire Wire Line
-	6700 4350 6700 4500
-Wire Wire Line
-	6800 4350 6800 4500
-Wire Wire Line
-	6900 4350 6900 4500
-Wire Wire Line
-	7000 4350 7000 4500
-Wire Wire Line
-	7100 4350 7100 4500
-Wire Wire Line
-	7200 4350 7200 4500
-Wire Wire Line
-	7300 4350 7300 4500
 Wire Notes Line
 	-1600 7400 -1600 6150
 Wire Notes Line
@@ -2123,47 +1415,121 @@ F1 "3in8out.sch" 60
 F2 "Bit0" I L 2900 2000 60 
 F3 "Bit1" I L 2900 2100 60 
 F4 "Bit2" I L 2900 2200 60 
-F5 "Y0" I R 3550 2000 60 
-F6 "Y1" I R 3550 2100 60 
-F7 "Y2" I R 3550 2200 60 
-F8 "Y3" I R 3550 2300 60 
-F9 "Y4" I R 3550 2400 60 
-F10 "Y5" I R 3550 2500 60 
-F11 "Y6" I R 3550 2600 60 
-F12 "Y7" I R 3550 2700 60 
+F5 "Y0" O R 3550 2000 60 
+F6 "Y1" O R 3550 2100 60 
+F7 "Y2" O R 3550 2200 60 
+F8 "Y3" O R 3550 2300 60 
+F9 "Y4" O R 3550 2400 60 
+F10 "Y5" O R 3550 2500 60 
+F11 "Y6" O R 3550 2600 60 
+F12 "Y7" O R 3550 2700 60 
 $EndSheet
 Text Notes 3350 2700 1    60   ~ 0
 output one High
 Text Notes 3150 2500 2    60   ~ 0
 input\nsome\nHigh
-Text Label 3650 2100 0    60   ~ 0
-KD11
-Text Label 3650 2000 0    60   ~ 0
-KD20
-Text Label 3650 2300 0    60   ~ 0
-KD13
-Text Label 3650 2200 0    60   ~ 0
-KD22
-Text Label 3650 2500 0    60   ~ 0
-KD15
-Text Label 3650 2400 0    60   ~ 0
-KD24
 Wire Wire Line
-	3650 2400 3550 2400
+	3550 2400 4000 2400
 Wire Wire Line
-	3650 2500 3550 2500
+	3550 2500 4000 2500
 Wire Wire Line
-	3650 2200 3550 2200
+	3550 2200 4000 2200
 Wire Wire Line
-	3650 2300 3550 2300
+	3550 2300 4000 2300
 Wire Wire Line
-	3650 2000 3550 2000
-Wire Wire Line
-	3650 2100 3550 2100
+	3550 2100 4000 2100
 Wire Wire Line
 	3650 2600 3550 2600
 Wire Wire Line
 	3650 2700 3550 2700
 NoConn ~ 3650 2600
 NoConn ~ 3650 2700
+$Sheet
+S 2500 1050 700  800 
+U 5A11EBE4
+F0 "7seg" 60
+F1 "7seg.sch" 60
+F2 "PB7" I L 2500 1100 60 
+F3 "PB6" I L 2500 1200 60 
+F4 "PB5" I L 2500 1300 60 
+F5 "PB4" I L 2500 1400 60 
+F6 "PB3" I L 2500 1500 60 
+F7 "PB2" I L 2500 1600 60 
+F8 "PB1" I L 2500 1700 60 
+F9 "PB0" I L 2500 1800 60 
+F10 "KD20" I R 3200 1100 60 
+F11 "KD11" I R 3200 1200 60 
+F12 "KD22" I R 3200 1300 60 
+F13 "KD13" I R 3200 1400 60 
+F14 "KD24" I R 3200 1500 60 
+F15 "KD15" I R 3200 1600 60 
+$EndSheet
+Text Label 3450 1200 2    60   ~ 0
+KD11
+Entry Wire Line
+	3650 1300 3550 1200
+Text Label 3450 1100 2    60   ~ 0
+KD20
+Entry Wire Line
+	3650 1200 3550 1100
+Text Label 3450 1400 2    60   ~ 0
+KD13
+Entry Wire Line
+	3650 1500 3550 1400
+Text Label 3450 1300 2    60   ~ 0
+KD22
+Entry Wire Line
+	3650 1400 3550 1300
+Text Label 3450 1600 2    60   ~ 0
+KD15
+Entry Wire Line
+	3650 1700 3550 1600
+Text Label 3450 1500 2    60   ~ 0
+KD24
+Entry Wire Line
+	3650 1600 3550 1500
+Wire Wire Line
+	3200 1500 3550 1500
+Wire Wire Line
+	3200 1600 3550 1600
+Wire Wire Line
+	3200 1300 3550 1300
+Wire Wire Line
+	3200 1400 3550 1400
+Wire Wire Line
+	3200 1100 3550 1100
+Wire Wire Line
+	3200 1200 3550 1200
+Wire Bus Line
+	3650 1200 3650 1800
+Text Label 3900 2100 2    60   ~ 0
+KD11
+Text Label 3900 2000 2    60   ~ 0
+KD20
+Text Label 3900 2300 2    60   ~ 0
+KD13
+Text Label 3900 2200 2    60   ~ 0
+KD22
+Text Label 3900 2500 2    60   ~ 0
+KD15
+Text Label 3900 2400 2    60   ~ 0
+KD24
+Wire Wire Line
+	3550 2000 4000 2000
+Entry Wire Line
+	4000 2100 4100 2000
+Entry Wire Line
+	4000 2000 4100 1900
+Entry Wire Line
+	4000 2300 4100 2200
+Entry Wire Line
+	4000 2200 4100 2100
+Entry Wire Line
+	4000 2500 4100 2400
+Entry Wire Line
+	4000 2400 4100 2300
+Wire Bus Line
+	4100 2400 4100 1800
+Wire Bus Line
+	4100 1800 3650 1800
 $EndSCHEMATC
