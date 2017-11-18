@@ -499,7 +499,7 @@ Text Label 6650 2800 1    60   ~ 0
 KD22
 Text Label 6450 2800 1    60   ~ 0
 KD13
-Text Notes 6350 2300 0    60   ~ 0
+Text Notes 6350 2250 0    60   ~ 0
 div number of Hz/RPM.
 Text Label 1800 3400 2    60   ~ 0
 KD13
