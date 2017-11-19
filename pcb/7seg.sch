@@ -515,10 +515,6 @@ Text Label 4850 3900 2    60   ~ 0
 KD24
 Entry Wire Line
 	5050 4000 4950 3900
-NoConn ~ 6250 3900
-NoConn ~ 5750 3900
-NoConn ~ 7650 3900
-NoConn ~ 9050 3900
 Text Label 4450 2450 2    60   ~ 0
 PB7
 Text Label 4450 2550 2    60   ~ 0
@@ -539,7 +535,6 @@ Text Notes 4100 2350 0    60   ~ 0
 input L.
 Text Notes 4450 3400 0    60   ~ 0
 input H.
-NoConn ~ 8550 3900
 Text Notes 9650 3800 0    60   ~ 0
 input L.
 Text Notes 9600 2950 0    60   ~ 0
@@ -717,6 +712,20 @@ F 3 "" H 3600 3150 50  0001 L CNN
 	1    3600 3150
 	1    0    0    -1  
 $EndComp
+Text Label 4850 3700 2    60   ~ 0
+KD22
+Text Notes 800  3300 0    60   ~ 0
+flow ->
+Text Notes 4500 4100 0    60   ~ 0
+flow ->
+Text Notes 4550 2350 0    60   ~ 0
+<- flow
+Text Notes 1700 2300 1    60   ~ 0
+<- flow
+Text Notes 10300 3500 1    60   ~ 0
+<- flow
+Text GLabel 3700 1800 2    60   Input ~ 0
+TVCC
 Wire Wire Line
 	3300 3900 4950 3900
 Wire Wire Line
@@ -940,20 +949,6 @@ Wire Wire Line
 	1700 1950 1700 2450
 Connection ~ 2100 1950
 Connection ~ 3700 1950
-Text Label 4850 3700 2    60   ~ 0
-KD22
 Wire Wire Line
 	2500 3700 4950 3700
-Text Notes 800  3300 0    60   ~ 0
-flow ->
-Text Notes 4500 4100 0    60   ~ 0
-flow ->
-Text Notes 4550 2350 0    60   ~ 0
-<- flow
-Text Notes 1700 2300 1    60   ~ 0
-<- flow
-Text Notes 10300 3500 1    60   ~ 0
-<- flow
-Text GLabel 3700 1800 2    60   Input ~ 0
-TVCC
 $EndSCHEMATC
