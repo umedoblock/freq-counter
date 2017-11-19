@@ -452,8 +452,6 @@ Connection ~ 6350 2750
 Wire Wire Line
 	6800 5150 6350 5150
 Wire Wire Line
-	6850 5700 6200 5700
-Wire Wire Line
 	6200 5700 6200 3300
 Connection ~ 6200 3300
 Text GLabel 2600 4250 0    60   Input ~ 0
@@ -479,4 +477,6 @@ Connection ~ 3500 1050
 Text GLabel 3400 3050 0    60   Input ~ 0
 TGND
 Connection ~ 3500 3050
+Wire Wire Line
+	6800 5700 6200 5700
 $EndSCHEMATC
