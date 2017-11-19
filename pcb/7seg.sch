@@ -940,17 +940,6 @@ Wire Wire Line
 	1700 1950 1700 2450
 Connection ~ 2100 1950
 Connection ~ 3700 1950
-$Comp
-L VCC #PWR?
-U 1 1 5A10A19C
-P 3700 1800
-F 0 "#PWR?" H 3700 1650 50  0001 C CNN
-F 1 "VCC" H 3700 1950 50  0000 C CNN
-F 2 "" H 3700 1800 50  0001 C CNN
-F 3 "" H 3700 1800 50  0001 C CNN
-	1    3700 1800
-	1    0    0    -1  
-$EndComp
 Text Label 4850 3700 2    60   ~ 0
 KD22
 Wire Wire Line
@@ -965,4 +954,6 @@ Text Notes 1700 2300 1    60   ~ 0
 <- flow
 Text Notes 10300 3500 1    60   ~ 0
 <- flow
+Text GLabel 3700 1800 2    60   Input ~ 0
+TVCC
 $EndSCHEMATC
