@@ -257,96 +257,6 @@ F 3 "" H 4500 2150 50  0001 C CNN
 $EndComp
 Text Label 8650 1700 0    60   ~ 0
 count-up-1-to-4
-Text Notes 1950 1000 0    60   ~ 0
-Thyristor
-$Comp
-L SW_Push SW?
-U 1 1 5A0DA7E7
-P 2150 1600
-F 0 "SW?" H 2200 1700 50  0000 L CNN
-F 1 "on" H 2150 1540 50  0000 C CNN
-F 2 "" H 2150 1800 50  0001 C CNN
-F 3 "" H 2150 1800 50  0001 C CNN
-	1    2150 1600
-	0    1    1    0   
-$EndComp
-$Comp
-L R R?
-U 1 1 5A0DA7E8
-P 2150 2550
-F 0 "R?" V 2230 2550 50  0000 C CNN
-F 1 "1k" V 2150 2550 50  0000 C CNN
-F 2 "" V 2080 2550 50  0001 C CNN
-F 3 "" H 2150 2550 50  0001 C CNN
-	1    2150 2550
-	1    0    0    -1  
-$EndComp
-$Comp
-L R R?
-U 1 1 5A0DA7E9
-P 2150 2050
-F 0 "R?" V 2050 2000 50  0000 C CNN
-F 1 "470" V 2150 2050 50  0000 C CNN
-F 2 "" V 2080 2050 50  0001 C CNN
-F 3 "" H 2150 2050 50  0001 C CNN
-	1    2150 2050
-	1    0    0    -1  
-$EndComp
-$Comp
-L 2SC1815 Q?
-U 1 1 5A0DA7EA
-P 2700 2800
-F 0 "Q?" H 2650 2950 50  0000 L CNN
-F 1 "2SC1815" V 2950 2650 50  0000 L CNN
-F 2 "TO_SOT_Packages_THT:TO-92_Molded_Narrow" H 2900 2725 50  0001 L CIN
-F 3 "" H 2700 2800 50  0001 L CNN
-	1    2700 2800
-	0    1    1    0   
-$EndComp
-$Comp
-L 2SA1015 Q?
-U 1 1 5A0DA7EB
-P 3000 2400
-F 0 "Q?" V 3150 2500 50  0000 L CNN
-F 1 "2SA1015" H 2700 2250 50  0000 L CNN
-F 2 "TO_SOT_Packages_THT:TO-92_Molded_Narrow" H 3200 2325 50  0001 L CIN
-F 3 "" H 3000 2400 50  0001 L CNN
-	1    3000 2400
-	0    -1   -1   0   
-$EndComp
-$Comp
-L VCC #PWR?
-U 1 1 5A0DA7ED
-P 2050 1200
-F 0 "#PWR?" H 2050 1050 50  0001 C CNN
-F 1 "VCC" H 2050 1350 50  0000 C CNN
-F 2 "" H 2050 1200 50  0001 C CNN
-F 3 "" H 2050 1200 50  0001 C CNN
-	1    2050 1200
-	1    0    0    -1  
-$EndComp
-$Comp
-L GND #PWR?
-U 1 1 5A0DA7EE
-P 2050 3000
-F 0 "#PWR?" H 2050 2750 50  0001 C CNN
-F 1 "GND" H 2050 2850 50  0000 C CNN
-F 2 "" H 2050 3000 50  0001 C CNN
-F 3 "" H 2050 3000 50  0001 C CNN
-	1    2050 3000
-	1    0    0    -1  
-$EndComp
-$Comp
-L SW_Push SW?
-U 1 1 5A0DA7F0
-P 2400 2600
-F 0 "SW?" H 2450 2700 50  0000 L CNN
-F 1 "off" H 2400 2540 50  0000 C CNN
-F 2 "" H 2400 2800 50  0001 C CNN
-F 3 "" H 2400 2800 50  0001 C CNN
-	1    2400 2600
-	0    1    1    0   
-$EndComp
 $Comp
 L 2SC1815 Q?
 U 1 1 5A0DA7F1
@@ -567,10 +477,6 @@ F 3 "" H 10450 4600 50  0001 C CNN
 	1    10450 4600
 	1    0    0    -1  
 $EndComp
-Text Label 3500 1300 0    60   ~ 0
-TVCC
-Text Label 3500 2300 0    60   ~ 0
-TGND
 Text Label 4050 3100 3    60   ~ 0
 TGND
 Text Label 4050 1200 1    60   ~ 0
@@ -641,12 +547,6 @@ F 3 "" H 1650 4750 50  0001 C CNN
 	1    1650 4750
 	1    0    0    -1  
 $EndComp
-Text Notes 3300 2400 0    60   ~ 0
-<-150mA
-Text Notes 2050 3000 0    60   ~ 0
-<-150mA
-Text Notes 3300 1400 0    60   ~ 0
-150mA->
 Text Notes 10000 4650 0    60   ~ 0
 10mA
 Text Notes 1200 6000 2    60   ~ 0
@@ -796,17 +696,6 @@ F 3 "" H 5050 5600 50  0001 C CNN
 	1    5050 5600
 	1    0    0    -1  
 $EndComp
-$Comp
-L C C?
-U 1 1 5A10545C
-P 3300 1750
-F 0 "C?" H 3325 1850 50  0000 L CNN
-F 1 "0.1u" H 3325 1650 50  0000 L CNN
-F 2 "" H 3338 1600 50  0001 C CNN
-F 3 "" H 3300 1750 50  0001 C CNN
-	1    3300 1750
-	1    0    0    -1  
-$EndComp
 Text Label 8000 6050 2    60   ~ 0
 TGND
 Text Label 8000 3950 2    60   ~ 0
@@ -923,17 +812,6 @@ Wire Wire Line
 Wire Wire Line
 	6050 4700 6650 4700
 Wire Wire Line
-	3200 2300 3300 2300
-Wire Wire Line
-	3300 2300 3500 2300
-Connection ~ 2700 2300
-Wire Wire Line
-	2700 2300 2700 2600
-Wire Wire Line
-	3000 2900 3000 2600
-Wire Wire Line
-	2900 2900 3000 2900
-Wire Wire Line
 	2050 4300 1750 4300
 Wire Wire Line
 	2050 4500 2050 4300
@@ -978,12 +856,6 @@ Wire Wire Line
 Connection ~ 10100 3950
 Wire Wire Line
 	10100 3950 10100 4050
-Connection ~ 2400 2900
-Wire Wire Line
-	2400 2900 2400 2800
-Connection ~ 2400 2300
-Wire Wire Line
-	2400 2400 2400 2300
 Connection ~ 8200 6050
 Connection ~ 10550 3950
 Connection ~ 9600 3950
@@ -1089,49 +961,6 @@ Wire Wire Line
 	9600 5150 9600 5550
 Wire Wire Line
 	9600 5550 9600 5650
-Wire Notes Line
-	1900 900  1900 3250
-Wire Notes Line
-	3800 900  1900 900 
-Wire Notes Line
-	3800 3250 3800 900 
-Wire Notes Line
-	1900 3250 3800 3250
-Connection ~ 2150 1300
-Wire Wire Line
-	2050 2900 2050 3000
-Connection ~ 2150 2900
-Wire Wire Line
-	2050 1200 2050 1300
-Wire Wire Line
-	2150 2700 2150 2900
-Wire Wire Line
-	2050 1300 2150 1300
-Wire Wire Line
-	2150 1300 3300 1300
-Wire Wire Line
-	3300 1300 3500 1300
-Wire Wire Line
-	2150 1400 2150 1300
-Wire Wire Line
-	2150 1900 2150 1800
-Connection ~ 2150 2300
-Wire Wire Line
-	2150 2200 2150 2300
-Wire Wire Line
-	2150 2300 2150 2400
-Wire Wire Line
-	2050 2900 2150 2900
-Wire Wire Line
-	2150 2900 2400 2900
-Wire Wire Line
-	2400 2900 2500 2900
-Wire Wire Line
-	2150 2300 2400 2300
-Wire Wire Line
-	2400 2300 2700 2300
-Wire Wire Line
-	2700 2300 2800 2300
 Wire Notes Line
 	11100 3500 7750 3500
 Wire Notes Line
@@ -1402,12 +1231,6 @@ Wire Wire Line
 Wire Wire Line
 	5050 5600 5050 5400
 Connection ~ 5050 5400
-Wire Wire Line
-	3300 1300 3300 1600
-Connection ~ 3300 1300
-Wire Wire Line
-	3300 1900 3300 2300
-Connection ~ 3300 2300
 Connection ~ 4850 6000
 Connection ~ 5250 6000
 Wire Notes Line
