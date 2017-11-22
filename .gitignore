@@ -20,3 +20,6 @@ _autosave-*
 # Exported BOM files
 *.xml
 *.csv
+
+# developer files
+pcb/omron/
