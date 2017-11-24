@@ -185,7 +185,7 @@ U 1 1 5A10DC81
 P 3750 1800
 F 0 "Q8" H 3700 1950 50  0000 L CNN
 F 1 "CSC388A" V 3950 1650 50  0000 L CNN
-F 2 "TO_SOT_Packages_THT:TO-92_Molded_Narrow" H 3950 1725 50  0001 L CIN
+F 2 "TO_SOT_Packages_THT:TO-92_Inline_Wide" H 3950 1725 50  0001 L CIN
 F 3 "" H 3750 1800 50  0001 L CNN
 	1    3750 1800
 	1    0    0    -1  
@@ -229,7 +229,7 @@ U 1 1 5A10DC9D
 P 3400 2750
 F 0 "Q6" H 3350 2900 50  0000 L CNN
 F 1 "CSC388A" V 3600 2600 50  0000 L CNN
-F 2 "TO_SOT_Packages_THT:TO-92_Molded_Narrow" H 3600 2675 50  0001 L CIN
+F 2 "TO_SOT_Packages_THT:TO-92_Inline_Wide" H 3600 2675 50  0001 L CIN
 F 3 "" H 3400 2750 50  0001 L CNN
 	1    3400 2750
 	1    0    0    -1  
@@ -267,6 +267,80 @@ F 3 "" H 2950 3200 50  0001 C CNN
 	1    2950 3200
 	0    -1   -1   0   
 $EndComp
+$Comp
+L CSC388A Q7
+U 1 1 5A10DCE5
+P 3400 4700
+F 0 "Q7" H 3350 4850 50  0000 L CNN
+F 1 "CSC388A" V 3600 4550 50  0000 L CNN
+F 2 "TO_SOT_Packages_THT:TO-92_Inline_Wide" H 3600 4625 50  0001 L CIN
+F 3 "" H 3400 4700 50  0001 L CNN
+	1    3400 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R27
+U 1 1 5A10DCEC
+P 2950 4700
+F 0 "R27" V 3030 4700 50  0000 C CNN
+F 1 "10k" V 2950 4700 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 2880 4700 50  0001 C CNN
+F 3 "" H 2950 4700 50  0001 C CNN
+	1    2950 4700
+	0    1    1    0   
+$EndComp
+$Comp
+L R R25
+U 1 1 5A10DCF3
+P 2950 3600
+F 0 "R25" V 3030 3600 50  0000 C CNN
+F 1 "2.2M" V 2950 3600 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 2880 3600 50  0001 C CNN
+F 3 "" H 2950 3600 50  0001 C CNN
+	1    2950 3600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R26
+U 1 1 5A10DD03
+P 2950 4250
+F 0 "R26" V 3030 4250 50  0000 C CNN
+F 1 "2.2M" V 2950 4250 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 2880 4250 50  0001 C CNN
+F 3 "" H 2950 4250 50  0001 C CNN
+	1    2950 4250
+	0    1    1    0   
+$EndComp
+Text HLabel 2600 1800 0    60   Input ~ 0
+Bit0
+Text HLabel 2600 2750 0    60   Input ~ 0
+Bit1
+Text HLabel 2600 3600 0    60   Input ~ 0
+Bit2
+Text HLabel 8050 1750 2    60   Input ~ 0
+Y0
+Text HLabel 8050 2300 2    60   Input ~ 0
+Y1
+Text HLabel 8050 2850 2    60   Input ~ 0
+Y2
+Text HLabel 8050 3400 2    60   Input ~ 0
+Y3
+Text HLabel 8000 4150 2    60   Input ~ 0
+Y4
+Text HLabel 8000 4700 2    60   Input ~ 0
+Y5
+Text HLabel 8000 5250 2    60   Input ~ 0
+Y6
+Text HLabel 8000 5800 2    60   Input ~ 0
+Y7
+Text GLabel 2600 4250 0    60   Input ~ 0
+TVCC
+Text GLabel 3500 5000 3    60   Input ~ 0
+TGND
+Text GLabel 2600 1050 0    60   Input ~ 0
+TVCC
+Text GLabel 3400 3050 0    60   Input ~ 0
+TGND
 Wire Wire Line
 	3400 1800 3550 1800
 Wire Wire Line
@@ -323,39 +397,6 @@ Wire Wire Line
 Connection ~ 4450 3200
 Wire Wire Line
 	3400 3050 3850 3050
-$Comp
-L CSC388A Q7
-U 1 1 5A10DCE5
-P 3400 4700
-F 0 "Q7" H 3350 4850 50  0000 L CNN
-F 1 "CSC388A" V 3600 4550 50  0000 L CNN
-F 2 "TO_SOT_Packages_THT:TO-92_Molded_Narrow" H 3600 4625 50  0001 L CIN
-F 3 "" H 3400 4700 50  0001 L CNN
-	1    3400 4700
-	1    0    0    -1  
-$EndComp
-$Comp
-L R R27
-U 1 1 5A10DCEC
-P 2950 4700
-F 0 "R27" V 3030 4700 50  0000 C CNN
-F 1 "10k" V 2950 4700 50  0000 C CNN
-F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 2880 4700 50  0001 C CNN
-F 3 "" H 2950 4700 50  0001 C CNN
-	1    2950 4700
-	0    1    1    0   
-$EndComp
-$Comp
-L R R25
-U 1 1 5A10DCF3
-P 2950 3600
-F 0 "R25" V 3030 3600 50  0000 C CNN
-F 1 "2.2M" V 2950 3600 50  0000 C CNN
-F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 2880 3600 50  0001 C CNN
-F 3 "" H 2950 3600 50  0001 C CNN
-	1    2950 3600
-	0    -1   -1   0   
-$EndComp
 Wire Wire Line
 	3100 4700 3200 4700
 Wire Wire Line
@@ -372,17 +413,6 @@ Wire Wire Line
 	3500 4900 3500 5000
 Wire Wire Line
 	6750 3600 3100 3600
-$Comp
-L R R26
-U 1 1 5A10DD03
-P 2950 4250
-F 0 "R26" V 3030 4250 50  0000 C CNN
-F 1 "2.2M" V 2950 4250 50  0000 C CNN
-F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 2880 4250 50  0001 C CNN
-F 3 "" H 2950 4250 50  0001 C CNN
-	1    2950 4250
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	5950 1650 6850 1650
 Wire Wire Line
@@ -424,28 +454,6 @@ Wire Wire Line
 Connection ~ 6700 4800
 Connection ~ 6700 4250
 Connection ~ 3500 4250
-Text HLabel 2600 1800 0    60   Input ~ 0
-Bit0
-Text HLabel 2600 2750 0    60   Input ~ 0
-Bit1
-Text HLabel 2600 3600 0    60   Input ~ 0
-Bit2
-Text HLabel 8050 1750 2    60   Input ~ 0
-Y0
-Text HLabel 8050 2300 2    60   Input ~ 0
-Y1
-Text HLabel 8050 2850 2    60   Input ~ 0
-Y2
-Text HLabel 8050 3400 2    60   Input ~ 0
-Y3
-Text HLabel 8000 4150 2    60   Input ~ 0
-Y4
-Text HLabel 8000 4700 2    60   Input ~ 0
-Y5
-Text HLabel 8000 5250 2    60   Input ~ 0
-Y6
-Text HLabel 8000 5800 2    60   Input ~ 0
-Y7
 Wire Wire Line
 	6350 5150 6350 2750
 Connection ~ 6350 2750
@@ -454,29 +462,52 @@ Wire Wire Line
 Wire Wire Line
 	6200 5700 6200 3300
 Connection ~ 6200 3300
-Text GLabel 2600 4250 0    60   Input ~ 0
-TVCC
 Wire Wire Line
 	2600 4250 2800 4250
 Wire Wire Line
 	3850 3050 3850 2000
-Text GLabel 3500 5000 3    60   Input ~ 0
-TGND
 Wire Wire Line
 	6850 3500 6750 3500
 Connection ~ 6750 3500
-Text GLabel 2600 1050 0    60   Input ~ 0
-TVCC
 Wire Wire Line
-	2600 1050 3850 1050
+	2600 1050 7250 1050
 Wire Wire Line
 	3850 1050 3850 1150
 Wire Wire Line
 	3500 1150 3500 1050
 Connection ~ 3500 1050
-Text GLabel 3400 3050 0    60   Input ~ 0
-TGND
 Connection ~ 3500 3050
 Wire Wire Line
 	6800 5700 6200 5700
+Wire Wire Line
+	5150 1050 5150 1450
+Connection ~ 3850 1050
+Connection ~ 5150 1050
+Text GLabel 7100 3850 0    60   Input ~ 0
+TVCC
+Wire Wire Line
+	7100 3850 7200 3850
+Wire Wire Line
+	7200 3850 7200 3950
+Wire Wire Line
+	5150 1950 5150 1850
+Wire Wire Line
+	4850 1950 5150 1950
+Connection ~ 4650 1750
+Wire Wire Line
+	7250 1950 7250 2050
+Wire Wire Line
+	7200 4350 7200 4450
+Text GLabel 4850 1950 0    60   Input ~ 0
+TGND
+Text GLabel 7150 2050 0    60   Input ~ 0
+TGND
+Wire Wire Line
+	7250 2050 7150 2050
+Text GLabel 7100 4450 0    60   Input ~ 0
+TGND
+Wire Wire Line
+	7200 4450 7100 4450
+Wire Wire Line
+	7250 1050 7250 1550
 $EndSCHEMATC
