@@ -33,4 +33,9 @@ D Logic Gate of NOR
 K SN74HC02N, NOR
 $ENDCMP
 #
+$CMP SW_DPDT_x2
+D Switch, dual pole double throw, separate symbols
+K switch dual-pole double-throw DPDT spdt ON-ON
+$ENDCMP
+#
 #End Doc Library
