@@ -802,7 +802,7 @@ U 1 1 5A148FCD
 P 1650 1250
 F 0 "SW1" H 1650 1420 50  0000 C CNN
 F 1 "on/off" H 1650 1500 50  0000 C CNN
-F 2 "freq-counter:Slide-switch" H 1650 1250 50  0001 C CNN
+F 2 "freq-counter:Slide-switch-x2" H 1650 1250 50  0001 C CNN
 F 3 "" H 1650 1250 50  0001 C CNN
 	1    1650 1250
 	1    0    0    -1  
@@ -939,7 +939,7 @@ U 1 1 5A19D878
 P 5850 4050
 F 0 "SW4" V 5800 4200 50  0000 C CNN
 F 1 "SW_SIGNAL" H 5550 4100 50  0000 C CNN
-F 2 "freq-counter:Slide-switch" H 5850 4050 50  0001 C CNN
+F 2 "freq-counter:Slide-switch-x2" H 5850 4050 50  0001 C CNN
 F 3 "" H 5850 4050 50  0001 C CNN
 	1    5850 4050
 	0    -1   1    0   
@@ -950,7 +950,7 @@ U 2 1 5A19D997
 P 6350 4050
 F 0 "SW4" V 6300 3950 50  0000 C CNN
 F 1 "SW_SIGNAL" H 6100 4100 50  0000 C CNN
-F 2 "freq-counter:Slide-switch" H 6350 4050 50  0001 C CNN
+F 2 "freq-counter:Slide-switch-x2" H 6350 4050 50  0001 C CNN
 F 3 "" H 6350 4050 50  0001 C CNN
 	2    6350 4050
 	0    -1   1    0   
