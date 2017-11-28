@@ -473,7 +473,7 @@ TVCC
 Text Label 5950 2800 0    60   ~ 0
 1kMG-H
 Text Label 5950 2900 0    60   ~ 0
-1kMG-H
+1kMG-L
 Text Label 3950 3800 0    60   ~ 0
 1kMG-L
 Text Label 3950 5750 0    60   ~ 0
