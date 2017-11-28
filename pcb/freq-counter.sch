@@ -758,9 +758,9 @@ F 3 "" H 6750 4300 50  0001 C CNN
 	1    6750 4300
 	1    0    0    -1  
 $EndComp
-Text Label 6350 3650 0    60   ~ 0
+Text Label 6350 3650 3    60   ~ 0
 TGND
-Text Label 5850 3650 0    60   ~ 0
+Text Label 5850 3650 3    60   ~ 0
 SIGNAL
 Text Notes 4600 3600 0    60   ~ 0
 two SIGNAL connections
@@ -942,7 +942,7 @@ F 1 "SW_SIGNAL" H 5550 4100 50  0000 C CNN
 F 2 "freq-counter:Slide-switch-x2" H 5850 4050 50  0001 C CNN
 F 3 "" H 5850 4050 50  0001 C CNN
 	1    5850 4050
-	0    -1   1    0   
+	0    1    1    0   
 $EndComp
 $Comp
 L SW_DPDT_x2 SW4
@@ -953,7 +953,7 @@ F 1 "SW_SIGNAL" H 6100 4100 50  0000 C CNN
 F 2 "freq-counter:Slide-switch-x2" H 6350 4050 50  0001 C CNN
 F 3 "" H 6350 4050 50  0001 C CNN
 	2    6350 4050
-	0    -1   1    0   
+	0    1    1    0   
 $EndComp
 Wire Wire Line
 	2050 4300 1750 4300
@@ -1431,4 +1431,12 @@ Wire Wire Line
 	5850 3850 5850 3650
 Wire Wire Line
 	6350 3850 6350 3650
+Text Label 5150 4300 0    60   ~ 0
+SIGNAL_RPM
+Text Label 5150 4500 0    60   ~ 0
+GND_RPM
+Text Label 6500 4300 1    60   ~ 0
+SIGNAL_BNC
+Text Label 6400 4500 0    60   ~ 0
+GND_BNC
 $EndSCHEMATC
