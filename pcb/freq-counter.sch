@@ -802,7 +802,7 @@ U 1 1 5A148FCD
 P 1650 1250
 F 0 "SW1" H 1650 1420 50  0000 C CNN
 F 1 "on/off" H 1650 1500 50  0000 C CNN
-F 2 "freq-counter:Slide-switch-x2" H 1650 1250 50  0001 C CNN
+F 2 "freq-counter:SW_Toggle_x1" H 1650 1250 50  0001 C CNN
 F 3 "" H 1650 1250 50  0001 C CNN
 	1    1650 1250
 	1    0    0    -1  
