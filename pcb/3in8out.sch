@@ -510,4 +510,10 @@ Wire Wire Line
 	7200 4450 7100 4450
 Wire Wire Line
 	7250 1050 7250 1550
+Text Label 2700 1800 0    60   ~ 0
+Bit0
+Text Label 2650 2750 0    60   ~ 0
+Bit1
+Text Label 2650 3600 0    60   ~ 0
+Bit2
 $EndSCHEMATC
