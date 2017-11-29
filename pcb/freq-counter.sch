@@ -1630,7 +1630,7 @@ Wire Wire Line
 Wire Wire Line
 	2050 1500 2000 1500
 Wire Wire Line
-	2000 1150 2000 1500
+	2000 1500 2000 1150
 Connection ~ 2000 1150
 Wire Wire Line
 	2050 1600 1950 1600
