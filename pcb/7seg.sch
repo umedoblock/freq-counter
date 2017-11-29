@@ -579,7 +579,7 @@ F 3 "" H 4650 2450 50  0001 C CNN
 	0    1    -1   0   
 $EndComp
 Text GLabel 7100 4600 3    60   Input ~ 0
-TGND
+T1GND
 $Comp
 L 2SC1815 Q9
 U 1 1 5A107034
@@ -725,7 +725,7 @@ Text Notes 1700 2300 1    60   ~ 0
 Text Notes 10300 3500 1    60   ~ 0
 <- flow
 Text GLabel 3700 1800 2    60   Input ~ 0
-TVCC
+T1VCC
 Wire Wire Line
 	3300 3900 4950 3900
 Wire Wire Line

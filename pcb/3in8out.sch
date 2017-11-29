@@ -334,13 +334,11 @@ Y6
 Text HLabel 8000 5800 2    60   Input ~ 0
 Y7
 Text GLabel 2600 4250 0    60   Input ~ 0
-TVCC
-Text GLabel 3500 5000 3    60   Input ~ 0
-TGND
+T1VCC
 Text GLabel 2600 1050 0    60   Input ~ 0
-TVCC
+T1VCC
 Text GLabel 3400 3050 0    60   Input ~ 0
-TGND
+T1GND
 Wire Wire Line
 	3400 1800 3550 1800
 Wire Wire Line
@@ -470,8 +468,6 @@ Wire Wire Line
 	6850 3500 6750 3500
 Connection ~ 6750 3500
 Wire Wire Line
-	2600 1050 7250 1050
-Wire Wire Line
 	3850 1050 3850 1150
 Wire Wire Line
 	3500 1150 3500 1050
@@ -479,41 +475,15 @@ Connection ~ 3500 1050
 Connection ~ 3500 3050
 Wire Wire Line
 	6800 5700 6200 5700
-Wire Wire Line
-	5150 1050 5150 1450
-Connection ~ 3850 1050
-Connection ~ 5150 1050
-Text GLabel 7100 3850 0    60   Input ~ 0
-TVCC
-Wire Wire Line
-	7100 3850 7200 3850
-Wire Wire Line
-	7200 3850 7200 3950
-Wire Wire Line
-	5150 1950 5150 1850
-Wire Wire Line
-	4850 1950 5150 1950
 Connection ~ 4650 1750
-Wire Wire Line
-	7250 1950 7250 2050
-Wire Wire Line
-	7200 4350 7200 4450
-Text GLabel 4850 1950 0    60   Input ~ 0
-TGND
-Text GLabel 7150 2050 0    60   Input ~ 0
-TGND
-Wire Wire Line
-	7250 2050 7150 2050
-Text GLabel 7100 4450 0    60   Input ~ 0
-TGND
-Wire Wire Line
-	7200 4450 7100 4450
-Wire Wire Line
-	7250 1050 7250 1550
 Text Label 2700 1800 0    60   ~ 0
 Bit0
 Text Label 2650 2750 0    60   ~ 0
 Bit1
 Text Label 2650 3600 0    60   ~ 0
 Bit2
+Text GLabel 3500 5000 3    60   Input ~ 0
+T1GND
+Wire Wire Line
+	2600 1050 3850 1050
 $EndSCHEMATC
