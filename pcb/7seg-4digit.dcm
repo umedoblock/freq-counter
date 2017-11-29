@@ -1,5 +1,30 @@
 EESchema-DOCLIB  Version 2.0
 #
+$CMP 7400
+D Quad nand2
+K TTL nand2
+$ENDCMP
+#
+$CMP 74HC00
+D Quad nand2
+K HCMOS nand2
+$ENDCMP
+#
+$CMP 74HCT00
+D Quad nand2
+K HCTMOS nand2
+$ENDCMP
+#
+$CMP 74LS00
+D Quad nand2
+K TTL nand2
+$ENDCMP
+#
+$CMP 74LS37
+D Quad Buffer nand2
+K TTL nand2 buffer
+$ENDCMP
+#
 $CMP ATTINY4313-PU
 D PDIP20, 4k Flash, 256B SRAM, 256B EEPROM
 K AVR 8bit Microcontroller tinyAVR

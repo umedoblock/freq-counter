@@ -334,11 +334,11 @@ Y6
 Text HLabel 8000 5800 2    60   Input ~ 0
 Y7
 Text GLabel 2600 4250 0    60   Input ~ 0
-T1VCC
+VCC_T1
 Text GLabel 2600 1050 0    60   Input ~ 0
-T1VCC
+VCC_T1
 Text GLabel 3400 3050 0    60   Input ~ 0
-T1GND
+GND_T1
 Wire Wire Line
 	3400 1800 3550 1800
 Wire Wire Line
@@ -483,7 +483,7 @@ Bit1
 Text Label 2650 3600 0    60   ~ 0
 Bit2
 Text GLabel 3500 5000 3    60   Input ~ 0
-T1GND
+GND_T1
 Wire Wire Line
 	2600 1050 3850 1050
 $EndSCHEMATC
