@@ -255,8 +255,6 @@ F 3 "" H 3650 2050 50  0001 C CNN
 	1    4100 2000
 	1    0    0    -1  
 $EndComp
-Text Label 10050 1600 0    60   ~ 0
-count-up-1-to-4
 $Comp
 L 2SC1815 Q5
 U 1 1 5A0DA7F1
@@ -602,9 +600,7 @@ Entry Wire Line
 	8900 2550 9000 2450
 Entry Wire Line
 	8900 2450 9000 2350
-Text Label 5100 3000 0    60   ~ 0
-count-up-1-to-4
-Text Notes 5100 3200 0    60   ~ 0
+Text Notes 5100 3250 0    60   ~ 0
 see 7seg sheet of right side\nin detail.
 Text Notes 3100 850  0    60   ~ 0
 Attiny4313
@@ -1276,7 +1272,7 @@ Connection ~ 9850 1600
 Wire Wire Line
 	9850 1600 9850 1500
 Wire Wire Line
-	9750 1600 10050 1600
+	9750 1600 10200 1600
 Connection ~ 9350 1600
 Wire Wire Line
 	9450 1600 9350 1600
@@ -1643,32 +1639,10 @@ Wire Wire Line
 Wire Wire Line
 	7900 3950 7900 3850
 $Comp
-L VCC #PWR022
-U 1 1 5A1F1808
-P 9350 900
-F 0 "#PWR022" H 9350 750 50  0001 C CNN
-F 1 "VCC" H 9450 950 50  0000 C CNN
-F 2 "" H 9350 900 50  0001 C CNN
-F 3 "" H 9350 900 50  0001 C CNN
-	1    9350 900 
-	1    0    0    -1  
-$EndComp
-$Comp
-L GND #PWR023
-U 1 1 5A1F21A6
-P 9350 2100
-F 0 "#PWR023" H 9350 1850 50  0001 C CNN
-F 1 "GND" H 9350 1950 50  0000 C CNN
-F 2 "" H 9350 2100 50  0001 C CNN
-F 3 "" H 9350 2100 50  0001 C CNN
-	1    9350 2100
-	1    0    0    -1  
-$EndComp
-$Comp
-L GND #PWR024
+L GND #PWR022
 U 1 1 5A1F3CDE
 P 6350 3650
-F 0 "#PWR024" H 6350 3400 50  0001 C CNN
+F 0 "#PWR022" H 6350 3400 50  0001 C CNN
 F 1 "GND" H 6350 3500 50  0000 C CNN
 F 2 "" H 6350 3650 50  0001 C CNN
 F 3 "" H 6350 3650 50  0001 C CNN
@@ -1676,10 +1650,10 @@ F 3 "" H 6350 3650 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L VCC #PWR025
+L VCC #PWR023
 U 1 1 5A1F4C25
 P 5800 4400
-F 0 "#PWR025" H 5800 4250 50  0001 C CNN
+F 0 "#PWR023" H 5800 4250 50  0001 C CNN
 F 1 "VCC" H 5800 4550 50  0000 C CNN
 F 2 "" H 5800 4400 50  0001 C CNN
 F 3 "" H 5800 4400 50  0001 C CNN
@@ -1819,4 +1793,34 @@ Text Label 900  4200 0    60   ~ 0
 LED_M
 Text Label 900  4300 0    60   ~ 0
 LED_G
+Text GLabel 9450 900  2    60   Input ~ 0
+VCC_T1
+Wire Wire Line
+	9350 900  9450 900 
+Text GLabel 9450 2100 2    60   Input ~ 0
+GND_T1
+Wire Wire Line
+	9350 2100 9450 2100
+$Comp
+L Conn_01x01_Male J16
+U 1 1 5A20B3ED
+P 10400 1600
+F 0 "J16" H 10350 1600 50  0000 C CNN
+F 1 "count-up_T1" H 10400 1500 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 10400 1600 50  0001 C CNN
+F 3 "" H 10400 1600 50  0001 C CNN
+	1    10400 1600
+	-1   0    0    1   
+$EndComp
+$Comp
+L Conn_01x01_Female J15
+U 1 1 5A20DDD4
+P 5300 3000
+F 0 "J15" H 5850 3000 50  0000 C CNN
+F 1 "count-up_T0" H 5550 3000 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x01_P2.54mm_Vertical" H 5300 3000 50  0001 C CNN
+F 3 "" H 5300 3000 50  0001 C CNN
+	1    5300 3000
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
