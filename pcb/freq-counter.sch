@@ -50,45 +50,45 @@ $EndDescr
 $Comp
 L LED D4
 U 1 1 5A031894
-P 1600 6050
-F 0 "D4" H 1600 6150 50  0000 C CNN
-F 1 "G" H 1600 5950 50  0000 C CNN
-F 2 "LEDs:LED_D5.0mm" H 1600 6050 50  0001 C CNN
-F 3 "" H 1600 6050 50  0001 C CNN
-	1    1600 6050
+P -750 4900
+F 0 "D4" H -750 4800 50  0000 C CNN
+F 1 "G" H -750 5000 50  0000 C CNN
+F 2 "LEDs:LED_D5.0mm" H -750 4900 50  0001 C CNN
+F 3 "" H -750 4900 50  0001 C CNN
+	1    -750 4900
 	1    0    0    -1  
 $EndComp
 $Comp
 L LED D3
 U 1 1 5A0318C9
-P 1600 5600
-F 0 "D3" H 1600 5700 50  0000 C CNN
-F 1 "M" H 1600 5500 50  0000 C CNN
-F 2 "LEDs:LED_D5.0mm" H 1600 5600 50  0001 C CNN
-F 3 "" H 1600 5600 50  0001 C CNN
-	1    1600 5600
+P -750 4600
+F 0 "D3" H -750 4500 50  0000 C CNN
+F 1 "M" H -750 4700 50  0000 C CNN
+F 2 "LEDs:LED_D5.0mm" H -750 4600 50  0001 C CNN
+F 3 "" H -750 4600 50  0001 C CNN
+	1    -750 4600
 	1    0    0    -1  
 $EndComp
 $Comp
 L LED D2
 U 1 1 5A0318F4
-P 1600 4300
-F 0 "D2" H 1600 4400 50  0000 C CNN
-F 1 "k" H 1600 4200 50  0000 C CNN
-F 2 "LEDs:LED_D5.0mm" H 1600 4300 50  0001 C CNN
-F 3 "" H 1600 4300 50  0001 C CNN
-	1    1600 4300
+P -750 4300
+F 0 "D2" H -750 4400 50  0000 C CNN
+F 1 "k" H -750 4200 50  0000 C CNN
+F 2 "LEDs:LED_D5.0mm" H -750 4300 50  0001 C CNN
+F 3 "" H -750 4300 50  0001 C CNN
+	1    -750 4300
 	1    0    0    1   
 $EndComp
 $Comp
 L LED D1
 U 1 1 5A05AA03
-P 1600 4000
-F 0 "D1" H 1600 4100 50  0000 C CNN
-F 1 "1" H 1600 3900 50  0000 C CNN
-F 2 "LEDs:LED_D5.0mm" H 1600 4000 50  0001 C CNN
-F 3 "" H 1600 4000 50  0001 C CNN
-	1    1600 4000
+P -750 4000
+F 0 "D1" H -750 4100 50  0000 C CNN
+F 1 "1" H -750 3900 50  0000 C CNN
+F 2 "LEDs:LED_D5.0mm" H -750 4000 50  0001 C CNN
+F 3 "" H -750 4000 50  0001 C CNN
+	1    -750 4000
 	1    0    0    1   
 $EndComp
 $Comp
@@ -182,13 +182,13 @@ $EndComp
 $Comp
 L R R1
 U 1 1 5A06506A
-P 1050 6050
-F 0 "R1" V 1130 6050 50  0000 C CNN
-F 1 "470" V 1050 6050 50  0000 C CNN
-F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 980 6050 50  0001 C CNN
-F 3 "" H 1050 6050 50  0001 C CNN
-	1    1050 6050
-	0    1    1    0   
+P -1050 5150
+F 0 "R1" V -970 5150 50  0000 C CNN
+F 1 "470" V -1050 5150 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V -1120 5150 50  0001 C CNN
+F 3 "" H -1050 5150 50  0001 C CNN
+	1    -1050 5150
+	-1   0    0    1   
 $EndComp
 $Comp
 L R R11
@@ -238,7 +238,7 @@ Text Notes 9850 1950 0    60   ~ 0
 debounce\nClock pin held low\npulse high
 Text Notes 7800 3650 0    60   ~ 0
 Hz/RPM LEDs
-Text Notes 2350 3750 2    60   ~ 0
+Text Notes -650 3650 2    60   ~ 0
 1kMG LEDs
 Text Label 10650 3950 0    60   ~ 0
 Hz/RPM_T0
@@ -509,7 +509,7 @@ F 3 "" H 1650 4750 50  0001 C CNN
 $EndComp
 Text Notes 10000 4650 0    60   ~ 0
 10mA
-Text Notes 1200 6000 2    60   ~ 0
+Text Notes -900 5050 3    60   ~ 0
 10mA
 $Sheet
 S 7400 2000 650  800 
@@ -1020,12 +1020,12 @@ $EndComp
 $Comp
 L VCC #PWR013
 U 1 1 5A1EAB1C
-P 850 4500
-F 0 "#PWR013" H 850 4350 50  0001 C CNN
-F 1 "VCC" H 850 4650 50  0000 C CNN
-F 2 "" H 850 4500 50  0001 C CNN
-F 3 "" H 850 4500 50  0001 C CNN
-	1    850  4500
+P 1000 4500
+F 0 "#PWR013" H 1000 4350 50  0001 C CNN
+F 1 "VCC" H 1000 4650 50  0000 C CNN
+F 2 "" H 1000 4500 50  0001 C CNN
+F 3 "" H 1000 4500 50  0001 C CNN
+	1    1000 4500
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1053,12 +1053,12 @@ $EndComp
 $Comp
 L GND #PWR016
 U 1 1 5A1ED93F
-P 800 6150
-F 0 "#PWR016" H 800 5900 50  0001 C CNN
-F 1 "GND" H 800 6000 50  0000 C CNN
-F 2 "" H 800 6150 50  0001 C CNN
-F 3 "" H 800 6150 50  0001 C CNN
-	1    800  6150
+P 850 4550
+F 0 "#PWR016" H 850 4300 50  0001 C CNN
+F 1 "GND" H 850 4400 50  0000 C CNN
+F 2 "" H 850 4550 50  0001 C CNN
+F 3 "" H 850 4550 50  0001 C CNN
+	1    850  4550
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1117,15 +1117,15 @@ F 3 "" H 7900 3850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2050 4300 1750 4300
+	-350 4300 -600 4300
 Wire Wire Line
-	2050 4500 2050 4300
+	2050 4100 2050 4500
 Wire Wire Line
-	1750 4000 2350 4000
+	-600 4000 50   4000
 Wire Wire Line
 	2350 4000 2350 4500
 Wire Wire Line
-	850  4500 1950 4500
+	1000 4500 1950 4500
 Wire Wire Line
 	2950 3900 2950 3700
 Wire Wire Line
@@ -1252,11 +1252,11 @@ Wire Wire Line
 Wire Notes Line
 	4350 3500 4350 6500
 Wire Notes Line
-	550  3500 4350 3500
+	-1200 3500 4350 3500
 Wire Notes Line
-	550  6500 550  3500
+	-1200 6500 -1200 3500
 Wire Notes Line
-	4350 6500 550  6500
+	4350 6500 -1200 6500
 Wire Notes Line
 	9150 2300 9150 750 
 Wire Notes Line
@@ -1285,9 +1285,11 @@ Wire Wire Line
 Wire Wire Line
 	3850 5750 3850 6100
 Wire Wire Line
-	1200 6050 1450 6050
+	-1050 4000 -1050 5000
 Wire Wire Line
-	1300 5600 1450 5600
+	-1050 4900 -900 4900
+Wire Wire Line
+	-1050 4600 -900 4600
 Wire Wire Line
 	3400 6100 3400 6100
 Wire Wire Line
@@ -1312,11 +1314,11 @@ Wire Wire Line
 Wire Wire Line
 	2250 5500 2250 5600
 Wire Wire Line
-	2250 5600 1750 5600
+	-250 4600 -600 4600
 Wire Wire Line
-	1950 5500 1950 6050
+	1950 5500 1950 5700
 Wire Wire Line
-	1950 6050 1750 6050
+	-600 4900 -150 4900
 Wire Wire Line
 	2450 5500 2450 5600
 Wire Wire Line
@@ -1358,11 +1360,11 @@ Wire Wire Line
 	2050 5850 2050 5500
 Connection ~ 2350 5850
 Wire Wire Line
-	800  6050 900  6050
+	-1050 5400 -1050 5300
 Wire Wire Line
-	1300 4300 1450 4300
+	-1050 4300 -900 4300
 Wire Wire Line
-	1300 4000 1450 4000
+	-1050 4000 -900 4000
 Wire Wire Line
 	1450 4600 1450 4500
 Connection ~ 1450 4500
@@ -1484,11 +1486,9 @@ Wire Wire Line
 	6550 5400 6550 5300
 Wire Wire Line
 	6550 5300 6650 5300
-Wire Wire Line
-	1300 4000 1300 6050
-Connection ~ 1300 6050
-Connection ~ 1300 5600
-Connection ~ 1300 4300
+Connection ~ -1050 4900
+Connection ~ -1050 4600
+Connection ~ -1050 4300
 Wire Wire Line
 	2800 1100 3200 1100
 Wire Wire Line
@@ -1639,8 +1639,6 @@ Wire Wire Line
 	2450 6400 3100 6400
 Connection ~ 2550 6400
 Wire Wire Line
-	800  6150 800  6050
-Wire Wire Line
 	7900 6150 7900 6050
 Wire Wire Line
 	7900 3950 7900 3850
@@ -1753,4 +1751,72 @@ Wire Wire Line
 Connection ~ 9600 5350
 Wire Wire Line
 	9600 5550 8900 5550
+$Comp
+L Conn_01x05_Female J14
+U 1 1 5A1F7FC1
+P 550 4200
+F 0 "J14" H 400 4500 50  0000 C CNN
+F 1 "1kMG_Terminal0" V 600 4200 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x05_P2.54mm_Vertical" H 550 4200 50  0001 C CNN
+F 3 "" H 550 4200 50  0001 C CNN
+	1    550  4200
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Conn_01x05_Male J13
+U 1 1 5A1F810E
+P 250 4200
+F 0 "J13" H 350 4500 50  0000 C CNN
+F 1 "1kMG_Terminal1" V 200 4200 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical" H 250 4200 50  0001 C CNN
+F 3 "" H 250 4200 50  0001 C CNN
+	1    250  4200
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	-350 4300 -350 4100
+Wire Wire Line
+	-350 4100 50   4100
+Wire Wire Line
+	-250 4600 -250 4200
+Wire Wire Line
+	-250 4200 50   4200
+Wire Wire Line
+	-150 4900 -150 4300
+Wire Wire Line
+	-150 4300 50   4300
+Wire Wire Line
+	-50  5400 -1050 5400
+Wire Wire Line
+	750  4000 2350 4000
+Wire Wire Line
+	750  4100 2050 4100
+Wire Wire Line
+	750  4300 1200 4300
+Wire Wire Line
+	1200 4300 1200 5700
+Wire Wire Line
+	1200 5700 1950 5700
+Wire Wire Line
+	750  4200 1300 4200
+Wire Wire Line
+	1300 4200 1300 5600
+Wire Wire Line
+	1300 5600 2250 5600
+Wire Wire Line
+	750  4400 850  4400
+Wire Wire Line
+	850  4400 850  4550
+Wire Wire Line
+	-50  5400 -50  4400
+Wire Wire Line
+	-50  4400 50   4400
+Text Label 900  4000 0    60   ~ 0
+LED_1
+Text Label 900  4100 0    60   ~ 0
+LED_k
+Text Label 900  4200 0    60   ~ 0
+LED_M
+Text Label 900  4300 0    60   ~ 0
+LED_G
 $EndSCHEMATC
