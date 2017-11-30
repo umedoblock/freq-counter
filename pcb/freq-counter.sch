@@ -241,9 +241,9 @@ Hz/RPM LEDs
 Text Notes 2350 3750 2    60   ~ 0
 1kMG LEDs
 Text Label 10650 3950 0    60   ~ 0
-Hz/RPM
+Hz/RPM_T0
 Text Label 5000 1100 0    60   ~ 0
-Hz/RPM
+Hz/RPM_T0
 $Comp
 L ATTINY4313-PU(freq-counter) U2
 U 1 1 5A09763E
@@ -349,7 +349,7 @@ $Comp
 L R R21
 U 1 1 5A0DA7F9
 P 10550 4500
-F 0 "R21" V 10450 4450 50  0000 C CNN
+F 0 "R21" V 10600 4300 50  0000 C CNN
 F 1 "10k" V 10550 4500 50  0000 C CNN
 F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 10480 4500 50  0001 C CNN
 F 3 "" H 10550 4500 50  0001 C CNN
@@ -918,7 +918,7 @@ U 1 1 5A1E6361
 P 5300 1900
 F 0 "J5" V 5450 2200 50  0000 C CNN
 F 1 "Segments-Terminal0" V 5350 1850 50  0000 C CNN
-F 2 "Conn_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical" H 5300 1900 50  0001 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x08_P2.54mm_Vertical" H 5300 1900 50  0001 C CNN
 F 3 "" H 5300 1900 50  0001 C CNN
 	1    5300 1900
 	1    0    0    1   
@@ -929,7 +929,7 @@ U 1 1 5A1E8092
 P 7100 1450
 F 0 "J7" V 7150 1750 50  0000 C CNN
 F 1 "Segments-Terminal1" V 7250 1400 50  0000 C CNN
-F 2 "Conn_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical" H 7100 1450 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical" H 7100 1450 50  0001 C CNN
 F 3 "" H 7100 1450 50  0001 C CNN
 	1    7100 1450
 	-1   0    0    1   
@@ -940,7 +940,7 @@ U 1 1 5A1E8B3E
 P 5300 2500
 F 0 "J6" H 5350 2500 50  0000 C CNN
 F 1 "Digits-Terminal0" H 5650 2600 50  0000 C CNN
-F 2 "Conn_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 5300 2500 50  0001 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical" H 5300 2500 50  0001 C CNN
 F 3 "" H 5300 2500 50  0001 C CNN
 	1    5300 2500
 	1    0    0    -1  
@@ -951,7 +951,7 @@ U 1 1 5A1EAFDB
 P 7100 2150
 F 0 "J8" V 7050 1550 50  0000 C CNN
 F 1 "Digits-Terminal1" V 7150 1800 50  0000 C CNN
-F 2 "Conn_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 7100 2150 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 7100 2150 50  0001 C CNN
 F 3 "" H 7100 2150 50  0001 C CNN
 	1    7100 2150
 	-1   0    0    -1  
@@ -1181,8 +1181,6 @@ Wire Wire Line
 	8200 5950 8200 6050
 Connection ~ 8200 5550
 Wire Wire Line
-	8300 5550 8200 5550
-Wire Wire Line
 	8200 5250 8200 5650
 Connection ~ 8200 3950
 Connection ~ 8200 4350
@@ -1207,9 +1205,7 @@ Wire Wire Line
 	9850 6050 9850 5950
 Connection ~ 9600 5550
 Wire Wire Line
-	8700 5550 9850 5550
-Wire Wire Line
-	9850 5550 9850 5650
+	9850 5350 9850 5650
 Connection ~ 9600 5150
 Wire Wire Line
 	9500 5150 9600 5150
@@ -1709,24 +1705,52 @@ Wire Wire Line
 Wire Wire Line
 	8700 5450 8900 5450
 Text Label 8100 5450 2    60   ~ 0
-TOGGLE_0
+TOGGLE0_T1
 Text Label 8900 5450 0    60   ~ 0
-TOGGLE_1
+TOGGLE1_T1
 $Comp
 L Conn_01x03_Male J11
 U 1 1 5A2062FA
-P 10800 6050
-F 0 "J11" H 10800 6250 50  0000 C CNN
-F 1 "Hz/RPM_Terminal" H 10800 5850 50  0000 C CNN
-F 2 "Conn_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 10800 6050 50  0001 C CNN
-F 3 "" H 10800 6050 50  0001 C CNN
-	1    10800 6050
+P 10850 6050
+F 0 "J11" V 10800 5950 50  0000 C CNN
+F 1 "Hz/RPM_Terminal1" H 11200 5900 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 10850 6050 50  0001 C CNN
+F 3 "" H 10850 6050 50  0001 C CNN
+	1    10850 6050
 	0    -1   -1   0   
 $EndComp
-Text Label 10700 5850 1    60   ~ 0
-TOGGLE_0
-Text Label 10800 5850 1    60   ~ 0
-TOGGLE_1
-Text Label 10900 5850 1    60   ~ 0
+Text Label 10750 5850 1    60   ~ 0
+TOGGLE0_T1
+Text Label 10850 5850 1    60   ~ 0
+TOGGLE1_T1
+Text Label 10950 5850 1    60   ~ 0
 Hz/RPM_T1
+$Comp
+L Conn_01x03_Female J12
+U 1 1 5A20A7A5
+P 10850 4350
+F 0 "J12" V 10900 4250 50  0000 C CNN
+F 1 "Hz/RPM_Terminal0" H 10500 4200 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical" H 10850 4350 50  0001 C CNN
+F 3 "" H 10850 4350 50  0001 C CNN
+	1    10850 4350
+	0    -1   -1   0   
+$EndComp
+Text Label 10950 4550 3    60   ~ 0
+Hz/RPM_T0
+Text Label 8100 5550 2    60   ~ 0
+TOGGLE0_T0
+Wire Wire Line
+	8100 5550 8200 5550
+Text Label 8900 5550 0    60   ~ 0
+TOGGLE1_T0
+Text Label 10750 4550 3    60   ~ 0
+TOGGLE0_T0
+Text Label 10850 4550 3    60   ~ 0
+TOGGLE1_T0
+Wire Wire Line
+	9850 5350 9600 5350
+Connection ~ 9600 5350
+Wire Wire Line
+	9600 5550 8900 5550
 $EndSCHEMATC
