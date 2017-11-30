@@ -217,7 +217,7 @@ L C C8
 U 1 1 5A06D2EB
 P 9850 1350
 F 0 "C8" H 9875 1450 50  0000 L CNN
-F 1 "0.1u" H 9875 1250 50  0000 L CNN
+F 1 "0.1u" H 9650 1450 50  0000 L CNN
 F 2 "Capacitors_THT:C_Disc_D3.4mm_W2.1mm_P2.50mm" H 9888 1200 50  0001 C CNN
 F 3 "" H 9850 1350 50  0001 C CNN
 	1    9850 1350
@@ -234,7 +234,7 @@ F 3 "" H 9350 1500 50  0001 C CNN
 	1    9350 1300
 	0    -1   -1   0   
 $EndComp
-Text Notes 9850 1950 0    60   ~ 0
+Text Notes 9900 1100 0    60   ~ 0
 debounce\nClock pin held low\npulse high
 Text Notes 7800 3650 0    60   ~ 0
 Hz/RPM LEDs
@@ -909,28 +909,6 @@ SIGNAL_BNC
 Text Label 6400 4500 0    60   ~ 0
 GND_BNC
 $Comp
-L Conn_01x08_Female J5
-U 1 1 5A1E6361
-P 5300 1900
-F 0 "J5" V 5450 2200 50  0000 C CNN
-F 1 "Segments-Terminal0" V 5350 1850 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x08_P2.54mm_Vertical" H 5300 1900 50  0001 C CNN
-F 3 "" H 5300 1900 50  0001 C CNN
-	1    5300 1900
-	1    0    0    1   
-$EndComp
-$Comp
-L Conn_01x08_Female J7
-U 1 1 5A1E8092
-P 7100 1450
-F 0 "J7" V 7150 1750 50  0000 C CNN
-F 1 "Segments-Terminal1" V 7250 1400 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical" H 7100 1450 50  0001 C CNN
-F 3 "" H 7100 1450 50  0001 C CNN
-	1    7100 1450
-	-1   0    0    1   
-$EndComp
-$Comp
 L Conn_01x03_Female J6
 U 1 1 5A1E8B3E
 P 5300 2500
@@ -1112,6 +1090,121 @@ F 3 "" H 7900 3850 50  0001 C CNN
 	1    7900 3850
 	1    0    0    -1  
 $EndComp
+$Comp
+L GND #PWR022
+U 1 1 5A1F3CDE
+P 6350 3650
+F 0 "#PWR022" H 6350 3400 50  0001 C CNN
+F 1 "GND" H 6350 3500 50  0000 C CNN
+F 2 "" H 6350 3650 50  0001 C CNN
+F 3 "" H 6350 3650 50  0001 C CNN
+	1    6350 3650
+	0    1    1    0   
+$EndComp
+$Comp
+L VCC #PWR023
+U 1 1 5A1F4C25
+P 5800 4400
+F 0 "#PWR023" H 5800 4250 50  0001 C CNN
+F 1 "VCC" H 5800 4550 50  0000 C CNN
+F 2 "" H 5800 4400 50  0001 C CNN
+F 3 "" H 5800 4400 50  0001 C CNN
+	1    5800 4400
+	0    1    1    0   
+$EndComp
+Text GLabel 9750 3650 2    60   Input ~ 0
+VCC_T1
+Text GLabel 10450 4750 0    60   Input ~ 0
+GND_T1
+Text Label 10100 3850 0    60   ~ 0
+Hz/RPM_T1
+Text Label 8100 5450 2    60   ~ 0
+TOGGLE0_T1
+Text Label 8900 5450 0    60   ~ 0
+TOGGLE1_T1
+$Comp
+L Conn_01x03_Male J11
+U 1 1 5A2062FA
+P 10850 6050
+F 0 "J11" V 10800 5950 50  0000 C CNN
+F 1 "Hz/RPM_Terminal1" H 11200 5900 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 10850 6050 50  0001 C CNN
+F 3 "" H 10850 6050 50  0001 C CNN
+	1    10850 6050
+	0    -1   -1   0   
+$EndComp
+Text Label 10750 5850 1    60   ~ 0
+TOGGLE0_T1
+Text Label 10850 5850 1    60   ~ 0
+TOGGLE1_T1
+Text Label 10950 5850 1    60   ~ 0
+Hz/RPM_T1
+$Comp
+L Conn_01x03_Female J12
+U 1 1 5A20A7A5
+P 10850 4350
+F 0 "J12" V 10900 4250 50  0000 C CNN
+F 1 "Hz/RPM_Terminal0" H 10500 4200 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical" H 10850 4350 50  0001 C CNN
+F 3 "" H 10850 4350 50  0001 C CNN
+	1    10850 4350
+	0    -1   -1   0   
+$EndComp
+Text Label 10950 4550 3    60   ~ 0
+Hz/RPM_T0
+Text Label 8100 5550 2    60   ~ 0
+TOGGLE0_T0
+Text Label 8900 5550 0    60   ~ 0
+TOGGLE1_T0
+Text Label 10750 4550 3    60   ~ 0
+TOGGLE0_T0
+Text Label 10850 4550 3    60   ~ 0
+TOGGLE1_T0
+$Comp
+L Conn_01x05_Female J14
+U 1 1 5A1F7FC1
+P 550 4200
+F 0 "J14" H 400 4500 50  0000 C CNN
+F 1 "1kMG_Terminal0" V 600 4200 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x05_P2.54mm_Vertical" H 550 4200 50  0001 C CNN
+F 3 "" H 550 4200 50  0001 C CNN
+	1    550  4200
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Conn_01x05_Male J13
+U 1 1 5A1F810E
+P 250 4200
+F 0 "J13" H 350 4500 50  0000 C CNN
+F 1 "1kMG_Terminal1" V 200 4200 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical" H 250 4200 50  0001 C CNN
+F 3 "" H 250 4200 50  0001 C CNN
+	1    250  4200
+	-1   0    0    -1  
+$EndComp
+Text Label 900  4000 0    60   ~ 0
+LED_1
+Text Label 900  4100 0    60   ~ 0
+LED_k
+Text Label 900  4200 0    60   ~ 0
+LED_M
+Text Label 900  4300 0    60   ~ 0
+LED_G
+Text GLabel 9450 900  2    60   Input ~ 0
+VCC_T1
+Text GLabel 9450 2100 2    60   Input ~ 0
+GND_T1
+$Comp
+L Conn_01x09_Female J5
+U 1 1 5A2152B9
+P 5300 1900
+F 0 "J5" H 5450 1600 50  0000 C CNN
+F 1 "Segments-Terminal0" V 5350 1950 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x09_P2.54mm_Vertical" H 5300 1900 50  0001 C CNN
+F 3 "" H 5300 1900 50  0001 C CNN
+	1    5300 1900
+	1    0    0    1   
+$EndComp
 Wire Wire Line
 	-350 4300 -600 4300
 Wire Wire Line
@@ -1272,7 +1365,7 @@ Connection ~ 9850 1600
 Wire Wire Line
 	9850 1600 9850 1500
 Wire Wire Line
-	9750 1600 10200 1600
+	9750 1600 10150 1600
 Connection ~ 9350 1600
 Wire Wire Line
 	9450 1600 9350 1600
@@ -1606,7 +1699,7 @@ Wire Wire Line
 Wire Wire Line
 	2050 1500 2000 1500
 Wire Wire Line
-	2000 1500 2000 1150
+	2000 1150 2000 1500
 Connection ~ 2000 1150
 Wire Wire Line
 	2050 1600 1950 1600
@@ -1638,36 +1731,8 @@ Wire Wire Line
 	7900 6150 7900 6050
 Wire Wire Line
 	7900 3950 7900 3850
-$Comp
-L GND #PWR022
-U 1 1 5A1F3CDE
-P 6350 3650
-F 0 "#PWR022" H 6350 3400 50  0001 C CNN
-F 1 "GND" H 6350 3500 50  0000 C CNN
-F 2 "" H 6350 3650 50  0001 C CNN
-F 3 "" H 6350 3650 50  0001 C CNN
-	1    6350 3650
-	0    1    1    0   
-$EndComp
-$Comp
-L VCC #PWR023
-U 1 1 5A1F4C25
-P 5800 4400
-F 0 "#PWR023" H 5800 4250 50  0001 C CNN
-F 1 "VCC" H 5800 4550 50  0000 C CNN
-F 2 "" H 5800 4400 50  0001 C CNN
-F 3 "" H 5800 4400 50  0001 C CNN
-	1    5800 4400
-	0    1    1    0   
-$EndComp
-Text GLabel 9750 3650 2    60   Input ~ 0
-VCC_T1
-Text GLabel 10450 4750 0    60   Input ~ 0
-GND_T1
 Wire Wire Line
 	9700 3650 9750 3650
-Text Label 10100 3850 0    60   ~ 0
-Hz/RPM_T1
 Wire Wire Line
 	10100 4050 10100 3850
 Wire Wire Line
@@ -1676,77 +1741,13 @@ Wire Wire Line
 	8300 5450 8100 5450
 Wire Wire Line
 	8700 5450 8900 5450
-Text Label 8100 5450 2    60   ~ 0
-TOGGLE0_T1
-Text Label 8900 5450 0    60   ~ 0
-TOGGLE1_T1
-$Comp
-L Conn_01x03_Male J11
-U 1 1 5A2062FA
-P 10850 6050
-F 0 "J11" V 10800 5950 50  0000 C CNN
-F 1 "Hz/RPM_Terminal1" H 11200 5900 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 10850 6050 50  0001 C CNN
-F 3 "" H 10850 6050 50  0001 C CNN
-	1    10850 6050
-	0    -1   -1   0   
-$EndComp
-Text Label 10750 5850 1    60   ~ 0
-TOGGLE0_T1
-Text Label 10850 5850 1    60   ~ 0
-TOGGLE1_T1
-Text Label 10950 5850 1    60   ~ 0
-Hz/RPM_T1
-$Comp
-L Conn_01x03_Female J12
-U 1 1 5A20A7A5
-P 10850 4350
-F 0 "J12" V 10900 4250 50  0000 C CNN
-F 1 "Hz/RPM_Terminal0" H 10500 4200 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical" H 10850 4350 50  0001 C CNN
-F 3 "" H 10850 4350 50  0001 C CNN
-	1    10850 4350
-	0    -1   -1   0   
-$EndComp
-Text Label 10950 4550 3    60   ~ 0
-Hz/RPM_T0
-Text Label 8100 5550 2    60   ~ 0
-TOGGLE0_T0
 Wire Wire Line
 	8100 5550 8200 5550
-Text Label 8900 5550 0    60   ~ 0
-TOGGLE1_T0
-Text Label 10750 4550 3    60   ~ 0
-TOGGLE0_T0
-Text Label 10850 4550 3    60   ~ 0
-TOGGLE1_T0
 Wire Wire Line
 	9850 5350 9600 5350
 Connection ~ 9600 5350
 Wire Wire Line
 	9600 5550 8900 5550
-$Comp
-L Conn_01x05_Female J14
-U 1 1 5A1F7FC1
-P 550 4200
-F 0 "J14" H 400 4500 50  0000 C CNN
-F 1 "1kMG_Terminal0" V 600 4200 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x05_P2.54mm_Vertical" H 550 4200 50  0001 C CNN
-F 3 "" H 550 4200 50  0001 C CNN
-	1    550  4200
-	-1   0    0    -1  
-$EndComp
-$Comp
-L Conn_01x05_Male J13
-U 1 1 5A1F810E
-P 250 4200
-F 0 "J13" H 350 4500 50  0000 C CNN
-F 1 "1kMG_Terminal1" V 200 4200 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical" H 250 4200 50  0001 C CNN
-F 3 "" H 250 4200 50  0001 C CNN
-	1    250  4200
-	-1   0    0    -1  
-$EndComp
 Wire Wire Line
 	-350 4300 -350 4100
 Wire Wire Line
@@ -1785,42 +1786,37 @@ Wire Wire Line
 	-50  5400 -50  4400
 Wire Wire Line
 	-50  4400 50   4400
-Text Label 900  4000 0    60   ~ 0
-LED_1
-Text Label 900  4100 0    60   ~ 0
-LED_k
-Text Label 900  4200 0    60   ~ 0
-LED_M
-Text Label 900  4300 0    60   ~ 0
-LED_G
-Text GLabel 9450 900  2    60   Input ~ 0
-VCC_T1
 Wire Wire Line
 	9350 900  9450 900 
-Text GLabel 9450 2100 2    60   Input ~ 0
-GND_T1
 Wire Wire Line
 	9350 2100 9450 2100
+Text Notes 10000 1500 0    60   ~ 0
+combine with\nSegments_Terminal1
 $Comp
-L Conn_01x01_Male J16
-U 1 1 5A20B3ED
-P 10400 1600
-F 0 "J16" H 10350 1600 50  0000 C CNN
-F 1 "count-up_T1" H 10400 1500 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 10400 1600 50  0001 C CNN
-F 3 "" H 10400 1600 50  0001 C CNN
-	1    10400 1600
-	-1   0    0    1   
+L Conn_01x09_Male J7
+U 1 1 5A21E414
+P 7100 1450
+F 0 "J7" H 6950 1150 50  0000 C CNN
+F 1 "Segments-Terminal1" V 7050 1500 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x09_P2.54mm_Vertical" H 7100 1450 50  0001 C CNN
+F 3 "" H 7100 1450 50  0001 C CNN
+	1    7100 1450
+	1    0    0    1   
 $EndComp
-$Comp
-L Conn_01x01_Female J15
-U 1 1 5A20DDD4
-P 5300 3000
-F 0 "J15" H 5850 3000 50  0000 C CNN
-F 1 "count-up_T0" H 5550 3000 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x01_P2.54mm_Vertical" H 5300 3000 50  0001 C CNN
-F 3 "" H 5300 3000 50  0001 C CNN
-	1    5300 3000
-	1    0    0    -1  
-$EndComp
+Text Label 5100 3000 0    60   ~ 0
+COUNT-UP_T0
+Text Label 5600 2250 0    60   ~ 0
+COUNT-UP_T0
+Wire Wire Line
+	5100 2250 5600 2250
+Text Label 7000 1950 1    60   ~ 0
+COUNT-UP_T1
+Text Label 10150 1600 0    60   ~ 0
+COUNT-UP_T1
+Wire Wire Line
+	7000 1950 7300 1950
+Wire Wire Line
+	7300 1950 7300 1850
+Wire Wire Line
+	5100 2300 5100 2250
 $EndSCHEMATC
