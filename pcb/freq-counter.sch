@@ -738,7 +738,7 @@ U 1 1 5A120D5D
 P 4750 4400
 F 0 "J1" H 4750 4600 50  0000 C CNN
 F 1 "RPM on board" H 4650 4200 50  0000 C CNN
-F 2 "Connector_JST:JST_XH_B03B-XH-A_1x03_P2.50mm_Horizontal" H 4750 4400 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Horizontal" H 4750 4400 50  0001 C CNN
 F 3 "" H 4750 4400 50  0001 C CNN
 	1    4750 4400
 	-1   0    0    1   
