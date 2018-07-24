@@ -1,39 +1,6 @@
-EESchema Schematic File Version 2
-LIBS:7seg-4digit
-LIBS:power
-LIBS:device
-LIBS:switches
-LIBS:relays
-LIBS:motors
-LIBS:transistors
-LIBS:conn
-LIBS:linear
-LIBS:regul
-LIBS:74xx
-LIBS:cmos4000
-LIBS:adc-dac
-LIBS:memory
-LIBS:xilinx
-LIBS:microcontrollers
-LIBS:dsp
-LIBS:microchip
-LIBS:analog_switches
-LIBS:motorola
-LIBS:texas
-LIBS:intel
-LIBS:audio
-LIBS:interface
-LIBS:digital-audio
-LIBS:philips
-LIBS:display
-LIBS:cypress
-LIBS:siliconi
-LIBS:opto
-LIBS:atmel
-LIBS:contrib
-LIBS:valves
+EESchema Schematic File Version 4
 LIBS:freq-counter-cache
-EELAYER 25 0
+EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -48,7 +15,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L 7seg-2digit-ca U7
+L freq-counter-rescue:7seg-2digit-ca U7
 U 1 1 5A12333C
 P 5850 3200
 F 0 "U7" H 5400 3550 60  0000 C CNN
@@ -127,7 +94,7 @@ Entry Bus Bus
 Entry Bus Bus
 	5050 4100 5150 4000
 $Comp
-L R R39
+L freq-counter-rescue:R R39
 U 1 1 5A123365
 P 4650 2550
 F 0 "R39" V 4700 2400 50  0000 C CNN
@@ -138,7 +105,7 @@ F 3 "" H 4650 2550 50  0001 C CNN
 	0    1    -1   0   
 $EndComp
 $Comp
-L R R40
+L freq-counter-rescue:R R40
 U 1 1 5A12336C
 P 4650 2650
 F 0 "R40" V 4700 2500 50  0000 C CNN
@@ -149,7 +116,7 @@ F 3 "" H 4650 2650 50  0001 C CNN
 	0    1    -1   0   
 $EndComp
 $Comp
-L R R41
+L freq-counter-rescue:R R41
 U 1 1 5A123373
 P 4650 2750
 F 0 "R41" V 4700 2600 50  0000 C CNN
@@ -160,7 +127,7 @@ F 3 "" H 4650 2750 50  0001 C CNN
 	0    1    -1   0   
 $EndComp
 $Comp
-L R R42
+L freq-counter-rescue:R R42
 U 1 1 5A12337A
 P 4650 2850
 F 0 "R42" V 4700 2700 50  0000 C CNN
@@ -171,7 +138,7 @@ F 3 "" H 4650 2850 50  0001 C CNN
 	0    1    -1   0   
 $EndComp
 $Comp
-L R R43
+L freq-counter-rescue:R R43
 U 1 1 5A123381
 P 4650 2950
 F 0 "R43" V 4700 2800 50  0000 C CNN
@@ -182,7 +149,7 @@ F 3 "" H 4650 2950 50  0001 C CNN
 	0    1    -1   0   
 $EndComp
 $Comp
-L R R44
+L freq-counter-rescue:R R44
 U 1 1 5A123388
 P 4650 3050
 F 0 "R44" V 4700 2900 50  0000 C CNN
@@ -193,7 +160,7 @@ F 3 "" H 4650 3050 50  0001 C CNN
 	0    1    -1   0   
 $EndComp
 $Comp
-L R R45
+L freq-counter-rescue:R R45
 U 1 1 5A12338F
 P 4650 3150
 F 0 "R45" V 4700 3000 50  0000 C CNN
@@ -236,7 +203,7 @@ Entry Wire Line
 Entry Wire Line
 	5050 3250 4950 3150
 $Comp
-L 7seg-2digit-ca U8
+L freq-counter-rescue:7seg-2digit-ca U8
 U 1 1 5A1233A6
 P 7250 3200
 F 0 "U8" H 6800 3550 60  0000 C CNN
@@ -315,7 +282,7 @@ Entry Bus Bus
 Entry Bus Bus
 	6450 4100 6550 4000
 $Comp
-L 7seg-2digit-ca U9
+L freq-counter-rescue:7seg-2digit-ca U9
 U 1 1 5A1233CF
 P 8650 3200
 F 0 "U9" H 8200 3550 60  0000 C CNN
@@ -409,7 +376,7 @@ NoConn ~ 9050 3700
 NoConn ~ 8550 3700
 NoConn ~ 7650 3700
 $Comp
-L LED D8
+L freq-counter-rescue:LED D8
 U 1 1 5A123402
 P 9700 3350
 F 0 "D8" H 9700 3450 50  0000 C CNN
@@ -420,7 +387,7 @@ F 3 "" H 9700 3350 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L LED D9
+L freq-counter-rescue:LED D9
 U 1 1 5A123409
 P 9900 3350
 F 0 "D9" H 9900 3450 50  0000 C CNN
@@ -431,7 +398,7 @@ F 3 "" H 9900 3350 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L LED D7
+L freq-counter-rescue:LED D7
 U 1 1 5A123410
 P 9500 3350
 F 0 "D7" H 9500 3450 50  0000 C CNN
@@ -442,7 +409,7 @@ F 3 "" H 9500 3350 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L LED D10
+L freq-counter-rescue:LED D10
 U 1 1 5A123417
 P 10100 3350
 F 0 "D10" H 10100 3450 50  0000 C CNN
@@ -461,7 +428,7 @@ KDP
 Text Label 10100 3500 3    60   ~ 0
 KDP
 $Comp
-L R R46
+L freq-counter-rescue:R R46
 U 1 1 5A123422
 P 7100 4350
 F 0 "R46" V 7180 4350 50  0000 C CNN
@@ -568,7 +535,7 @@ KD24
 Text HLabel 850  3150 0    60   Input ~ 0
 KD15
 $Comp
-L R R38
+L freq-counter-rescue:R R38
 U 1 1 5A129408
 P 4650 2450
 F 0 "R38" V 4700 2300 50  0000 C CNN
@@ -581,7 +548,7 @@ $EndComp
 Text GLabel 7100 4600 3    60   Input ~ 0
 GND_T1
 $Comp
-L 2SC1815 Q9
+L freq-counter-rescue:2SC1815 Q9
 U 1 1 5A107034
 P 1600 2650
 F 0 "Q9" H 1450 2750 50  0000 L CNN
@@ -592,7 +559,7 @@ F 3 "" H 1600 2650 50  0001 L CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R32
+L freq-counter-rescue:R R32
 U 1 1 5A1075D9
 P 1150 2650
 F 0 "R32" V 1200 2500 50  0000 C CNN
@@ -603,7 +570,7 @@ F 3 "" H 1150 2650 50  0001 C CNN
 	0    1    -1   0   
 $EndComp
 $Comp
-L R R33
+L freq-counter-rescue:R R33
 U 1 1 5A107776
 P 1150 2750
 F 0 "R33" V 1200 2600 50  0000 C CNN
@@ -614,7 +581,7 @@ F 3 "" H 1150 2750 50  0001 C CNN
 	0    1    -1   0   
 $EndComp
 $Comp
-L R R34
+L freq-counter-rescue:R R34
 U 1 1 5A1077BF
 P 1150 2850
 F 0 "R34" V 1200 2700 50  0000 C CNN
@@ -625,7 +592,7 @@ F 3 "" H 1150 2850 50  0001 C CNN
 	0    1    -1   0   
 $EndComp
 $Comp
-L R R35
+L freq-counter-rescue:R R35
 U 1 1 5A10780B
 P 1150 2950
 F 0 "R35" V 1200 2800 50  0000 C CNN
@@ -636,7 +603,7 @@ F 3 "" H 1150 2950 50  0001 C CNN
 	0    1    -1   0   
 $EndComp
 $Comp
-L R R36
+L freq-counter-rescue:R R36
 U 1 1 5A10785A
 P 1150 3050
 F 0 "R36" V 1200 2900 50  0000 C CNN
@@ -647,7 +614,7 @@ F 3 "" H 1150 3050 50  0001 C CNN
 	0    1    -1   0   
 $EndComp
 $Comp
-L R R37
+L freq-counter-rescue:R R37
 U 1 1 5A1078AC
 P 1150 3150
 F 0 "R37" V 1200 3000 50  0000 C CNN
@@ -658,7 +625,7 @@ F 3 "" H 1150 3150 50  0001 C CNN
 	0    1    -1   0   
 $EndComp
 $Comp
-L 2SC1815 Q10
+L freq-counter-rescue:2SC1815 Q10
 U 1 1 5A107D1F
 P 2000 2750
 F 0 "Q10" H 1850 2850 50  0000 L CNN
@@ -669,7 +636,7 @@ F 3 "" H 2000 2750 50  0001 L CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 2SC1815 Q11
+L freq-counter-rescue:2SC1815 Q11
 U 1 1 5A107D99
 P 2400 2850
 F 0 "Q11" H 2250 2950 50  0000 L CNN
@@ -680,7 +647,7 @@ F 3 "" H 2400 2850 50  0001 L CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 2SC1815 Q12
+L freq-counter-rescue:2SC1815 Q12
 U 1 1 5A107E06
 P 2800 2950
 F 0 "Q12" H 2650 3050 50  0000 L CNN
@@ -691,7 +658,7 @@ F 3 "" H 2800 2950 50  0001 L CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 2SC1815 Q13
+L freq-counter-rescue:2SC1815 Q13
 U 1 1 5A107E72
 P 3200 3050
 F 0 "Q13" H 3050 3150 50  0000 L CNN
@@ -702,7 +669,7 @@ F 3 "" H 3200 3050 50  0001 L CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 2SC1815 Q14
+L freq-counter-rescue:2SC1815 Q14
 U 1 1 5A107FF8
 P 3600 3150
 F 0 "Q14" H 3450 3250 50  0000 L CNN

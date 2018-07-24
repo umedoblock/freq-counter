@@ -1,39 +1,6 @@
-EESchema Schematic File Version 2
-LIBS:7seg-4digit
-LIBS:power
-LIBS:device
-LIBS:switches
-LIBS:relays
-LIBS:motors
-LIBS:transistors
-LIBS:conn
-LIBS:linear
-LIBS:regul
-LIBS:74xx
-LIBS:cmos4000
-LIBS:adc-dac
-LIBS:memory
-LIBS:xilinx
-LIBS:microcontrollers
-LIBS:dsp
-LIBS:microchip
-LIBS:analog_switches
-LIBS:motorola
-LIBS:texas
-LIBS:intel
-LIBS:audio
-LIBS:interface
-LIBS:digital-audio
-LIBS:philips
-LIBS:display
-LIBS:cypress
-LIBS:siliconi
-LIBS:opto
-LIBS:atmel
-LIBS:contrib
-LIBS:valves
+EESchema Schematic File Version 4
 LIBS:freq-counter-cache
-EELAYER 25 0
+EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -48,7 +15,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L 74HC00 U4
+L freq-counter-rescue:74HC00 U4
 U 1 1 5A10DC2D
 P 5350 1650
 F 0 "U4" H 5350 1700 50  0000 C CNN
@@ -59,7 +26,7 @@ F 3 "" H 5350 1650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 74HC00 U4
+L freq-counter-rescue:74HC00 U4
 U 2 1 5A10DC34
 P 5350 2200
 F 0 "U4" H 5350 2250 50  0000 C CNN
@@ -70,7 +37,7 @@ F 3 "" H 5350 2200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 74HC00 U4
+L freq-counter-rescue:74HC00 U4
 U 3 1 5A10DC3B
 P 5350 2750
 F 0 "U4" H 5350 2800 50  0000 C CNN
@@ -81,7 +48,7 @@ F 3 "" H 5350 2750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 74HC00 U4
+L freq-counter-rescue:74HC00 U4
 U 4 1 5A10DC42
 P 5350 3300
 F 0 "U4" H 5350 3350 50  0000 C CNN
@@ -92,7 +59,7 @@ F 3 "" H 5350 3300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 74HC00 U6
+L freq-counter-rescue:74HC00 U6
 U 1 1 5A10DC49
 P 7450 1750
 F 0 "U6" H 7450 1800 50  0000 C CNN
@@ -103,7 +70,7 @@ F 3 "" H 7450 1750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 74HC00 U6
+L freq-counter-rescue:74HC00 U6
 U 2 1 5A10DC50
 P 7450 2300
 F 0 "U6" H 7450 2350 50  0000 C CNN
@@ -114,7 +81,7 @@ F 3 "" H 7450 2300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 74HC00 U6
+L freq-counter-rescue:74HC00 U6
 U 3 1 5A10DC57
 P 7450 2850
 F 0 "U6" H 7450 2900 50  0000 C CNN
@@ -125,7 +92,7 @@ F 3 "" H 7450 2850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 74HC00 U6
+L freq-counter-rescue:74HC00 U6
 U 4 1 5A10DC5E
 P 7450 3400
 F 0 "U6" H 7450 3450 50  0000 C CNN
@@ -136,7 +103,7 @@ F 3 "" H 7450 3400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 74HC00 U5
+L freq-counter-rescue:74HC00 U5
 U 1 1 5A10DC65
 P 7400 4150
 F 0 "U5" H 7400 4200 50  0000 C CNN
@@ -147,7 +114,7 @@ F 3 "" H 7400 4150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 74HC00 U5
+L freq-counter-rescue:74HC00 U5
 U 2 1 5A10DC6C
 P 7400 4700
 F 0 "U5" H 7400 4750 50  0000 C CNN
@@ -158,7 +125,7 @@ F 3 "" H 7400 4700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 74HC00 U5
+L freq-counter-rescue:74HC00 U5
 U 3 1 5A10DC73
 P 7400 5250
 F 0 "U5" H 7400 5300 50  0000 C CNN
@@ -169,7 +136,7 @@ F 3 "" H 7400 5250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 74HC00 U5
+L freq-counter-rescue:74HC00 U5
 U 4 1 5A10DC7A
 P 7400 5800
 F 0 "U5" H 7400 5850 50  0000 C CNN
@@ -180,7 +147,7 @@ F 3 "" H 7400 5800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L CSC388A Q8
+L freq-counter-rescue:CSC388A Q8
 U 1 1 5A10DC81
 P 3750 1800
 F 0 "Q8" H 3700 1950 50  0000 L CNN
@@ -191,7 +158,7 @@ F 3 "" H 3750 1800 50  0001 L CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R28
+L freq-counter-rescue:R R28
 U 1 1 5A10DC88
 P 3250 1800
 F 0 "R28" V 3330 1800 50  0000 C CNN
@@ -202,7 +169,7 @@ F 3 "" H 3250 1800 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L R R31
+L freq-counter-rescue:R R31
 U 1 1 5A10DC8F
 P 3850 1300
 F 0 "R31" V 3930 1300 50  0000 C CNN
@@ -213,7 +180,7 @@ F 3 "" H 3850 1300 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L R R29
+L freq-counter-rescue:R R29
 U 1 1 5A10DC96
 P 3250 2100
 F 0 "R29" V 3330 2100 50  0000 C CNN
@@ -224,7 +191,7 @@ F 3 "" H 3250 2100 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L CSC388A Q6
+L freq-counter-rescue:CSC388A Q6
 U 1 1 5A10DC9D
 P 3400 2750
 F 0 "Q6" H 3350 2900 50  0000 L CNN
@@ -235,7 +202,7 @@ F 3 "" H 3400 2750 50  0001 L CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R23
+L freq-counter-rescue:R R23
 U 1 1 5A10DCA4
 P 2950 2750
 F 0 "R23" V 3030 2750 50  0000 C CNN
@@ -246,7 +213,7 @@ F 3 "" H 2950 2750 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L R R30
+L freq-counter-rescue:R R30
 U 1 1 5A10DCAB
 P 3500 1300
 F 0 "R30" V 3580 1300 50  0000 C CNN
@@ -257,7 +224,7 @@ F 3 "" H 3500 1300 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L R R24
+L freq-counter-rescue:R R24
 U 1 1 5A10DCB2
 P 2950 3200
 F 0 "R24" V 3030 3200 50  0000 C CNN
@@ -268,7 +235,7 @@ F 3 "" H 2950 3200 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L CSC388A Q7
+L freq-counter-rescue:CSC388A Q7
 U 1 1 5A10DCE5
 P 3400 4700
 F 0 "Q7" H 3350 4850 50  0000 L CNN
@@ -279,7 +246,7 @@ F 3 "" H 3400 4700 50  0001 L CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R27
+L freq-counter-rescue:R R27
 U 1 1 5A10DCEC
 P 2950 4700
 F 0 "R27" V 3030 4700 50  0000 C CNN
@@ -290,7 +257,7 @@ F 3 "" H 2950 4700 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L R R25
+L freq-counter-rescue:R R25
 U 1 1 5A10DCF3
 P 2950 3600
 F 0 "R25" V 3030 3600 50  0000 C CNN
@@ -301,7 +268,7 @@ F 3 "" H 2950 3600 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L R R26
+L freq-counter-rescue:R R26
 U 1 1 5A10DD03
 P 2950 4250
 F 0 "R26" V 3030 4250 50  0000 C CNN
